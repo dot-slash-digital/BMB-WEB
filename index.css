@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    background-color: #6d6d6d;
+}
+
+.nav-link {
+    padding-left: 1.9rem !important;
+    padding-right: 1.9rem !important;
+}
