@@ -11,3 +11,38 @@ img {
     padding-left: 1.9rem !important;
     padding-right: 1.9rem !important;
 }
+
+footer {
+    padding: 25px 0;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+#footer-sm {
+    margin-top: 10px;
+}
+
+.footer-sm-link {
+    float: left;
+    width: 25%;
+    font-size: 28px;
+    text-align: center;
+}
+
+.footer-page-row {
+    text-align: center;
+    height: 50%;
+}
+
+.footer-page-col {
+    height: 100%;
+    padding: 13px 0;
+}
+
+#footer-email-input {
+    max-width: 300px;
+    margin: 10px auto 0 auto;
+}
