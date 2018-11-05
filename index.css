@@ -3,7 +3,9 @@ body {
     padding: 0;
 }
 
-img {
+/* Navbar */
+
+.navbar-brand img {
     background-color: #6d6d6d;
 }
 
@@ -11,6 +13,8 @@ img {
     padding-left: 1.9rem !important;
     padding-right: 1.9rem !important;
 }
+
+/* Footer */
 
 footer {
     padding: 25px 0;
@@ -28,7 +32,7 @@ footer p {
 .footer-sm-link {
     float: left;
     width: 25%;
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -38,11 +42,66 @@ footer p {
 }
 
 .footer-page-col {
-    height: 100%;
-    padding: 13px 0;
+    
 }
 
 #footer-email-input {
     max-width: 300px;
     margin: 10px auto 0 auto;
+}
+
+/* Home Page */
+
+/* Intro Section */
+#intro-section {
+    width: 100%;
+    background-color: #e0e0e0;
+}
+
+#intro-section .col {
+    padding: 5%;
+}
+
+.text-main {
+    margin: 0;
+    font-size: 30px;
+}
+
+.text-sub {
+    margin: 0;
+    font-size: 16px;
+}
+
+#intro-section .row .col .btn {
+    margin-top: 15px;
+}
+
+#intro-section .row .col img {
+    width: 100%;
+}
+
+
+/* Tagline Section */
+#tagline-section {
+    width: 100%;
+    background-color: #c1c1c1;
+}
+
+#tagline-section p {
+    margin: 0;
+    padding: 75px 0;
+    text-align: center;
+}
+
+/* About Section */
+#about-section {
+    height: 500px;
+    width: 100%;
+    background-color: #b2b1b1;
+}
+/* Product Section */
+#product-section {
+    height: 500px;
+    width: 100%;
+    background-color: #a8a8a8;
 }
