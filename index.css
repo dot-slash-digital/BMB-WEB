@@ -3,6 +3,20 @@ body {
     padding: 0;
 }
 
+hr {
+    width: 90%;
+}
+
+.text-main {
+    margin: 0;
+    font-size: 42px;
+}
+
+.text-sub {
+    margin: 0;
+    font-size: 16px;
+}
+
 /* Navbar */
 
 .navbar-brand img {
@@ -41,10 +55,6 @@ footer p {
     height: 50%;
 }
 
-.footer-page-col {
-    
-}
-
 #footer-email-input {
     max-width: 300px;
     margin: 10px auto 0 auto;
@@ -53,55 +63,114 @@ footer p {
 /* Home Page */
 
 /* Intro Section */
+
 #intro-section {
     width: 100%;
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
 }
 
-#intro-section .col {
-    padding: 5%;
+#intro-section .row {
+    padding: 5% 0;
 }
 
-.text-main {
-    margin: 0;
-    font-size: 30px;
+#intro-text-col {
+    padding-left: 15%;
 }
 
-.text-sub {
-    margin: 0;
-    font-size: 16px;
+#intro-image-col {
+    padding: 0 15%;
+    text-align: center;
 }
 
-#intro-section .row .col .btn {
+#intro-section .row div .btn {
     margin-top: 15px;
 }
 
-#intro-section .row .col img {
-    width: 100%;
+#intro-section .row div img {
+    height: 400px;
 }
 
-
 /* Tagline Section */
+
 #tagline-section {
     width: 100%;
-    background-color: #c1c1c1;
+    /* background-color: #c1c1c1; */
 }
 
 #tagline-section p {
     margin: 0;
-    padding: 75px 0;
+    padding: 5% 0;
     text-align: center;
 }
 
 /* About Section */
+
 #about-section {
-    height: 500px;
     width: 100%;
-    background-color: #b2b1b1;
+    /* background-color: #b2b1b1; */
 }
-/* Product Section */
-#product-section {
-    height: 500px;
+
+#about-section .row {
+    padding: 5% 0;
+}
+
+#about-image-col {
+    padding: 0 10%;
+    text-align: center;
+}
+
+#about-text-col {
+    padding-right: 15%;
+}
+
+#about-title {
+    text-align: center;
+}
+
+#about-section .row div img {
+    height: 400px;
+}
+
+#about-icons {
     width: 100%;
-    background-color: #a8a8a8;
+    margin: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#about-icons i {
+    font-size: 48px;
+}
+
+#about-icons span {
+    font-size: 10px;
+}
+
+/* Share Section */
+
+#share-section {
+    width: 100%;
+    /* background-color: #a8a8a8; */
+}
+
+#share-section .row {
+    padding: 5% 0;
+}
+
+#share-title {
+    text-align: center;
+}
+
+#share-subtext {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#share-image-container {
+    margin: 5% 15%;
+}
+
+#share-image-container img {
+    width: calc(((100% - 15%) / 3) - 3px);
+    margin: 0 2.5%;
 }
