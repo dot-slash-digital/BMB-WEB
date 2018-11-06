@@ -174,3 +174,18 @@ footer p {
     width: calc(((100% - 15%) / 3) - 3px);
     margin: 0 2.5%;
 }
+
+/* Contact Page */
+
+#contact-outer {
+    width: 600px;
+    margin: 5% auto;
+}
+
+#contact-outer .text-main {
+    text-align: center;
+}
+
+#contact-outer .text-sub {
+    margin-bottom: 5%;
+}
