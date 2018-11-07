@@ -194,6 +194,65 @@ footer p {
     margin: 0 25%;
 }
 
+/* Stories Page */
+
+#stories-outer {
+    margin: 5% 0;
+}
+
+#stories-intro, #stories-share {
+    width: 50%;
+    margin: 0 auto 50px auto;
+}
+
+#stories-intro .text-main, #stories-share p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+#stories-gallery {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#stories-gallery .row .col img {
+    width: 100%;
+}
+
+#stories-gallery .row {
+    margin-bottom: 25px;
+}
+
+/* About Page */
+
+#about-mission .col, #about-story .col, #about-team .col {
+    width: 50%;
+    margin: 5%;
+}
+
+#about-mission .col img, #about-story .col img {
+    margin: 10%;
+    width: 80%;
+}
+
+#about-join p {
+    width: 100%;
+    text-align: center;
+}
+
+#about-team .col .row .col img {
+    width: 100%;
+}
+
+#about-team .col .row .col {
+    text-align: center;
+}
+
+#about-join {
+    margin: 5% 0;
+}
+
 /* Contact Page */
 
 #contact-outer {
