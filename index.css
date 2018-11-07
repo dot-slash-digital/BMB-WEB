@@ -175,6 +175,25 @@ footer p {
     margin: 0 2.5%;
 }
 
+/* Shop Page */
+
+#shop-outer {
+    height: calc(100vh - 101px - 98px);
+}
+
+#shop-outer .row {
+    height: 100%;
+}
+
+#shop-outer .row .col {
+    text-align: center;
+    /* height: calc(100% - 101px - 98px); */
+}
+
+.shop-text {
+    margin: 0 25%;
+}
+
 /* Contact Page */
 
 #contact-outer {
