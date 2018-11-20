@@ -13,10 +13,15 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300" rel="stylesheet">
+        
         <!-- CSS -->
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <div id="bg"></div>
+        
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <a class="navbar-brand" href="#">
@@ -45,20 +50,20 @@
         </nav>
         
         <!-- Home Page -->
-        <div>
+        <div id="home-page">
             <!-- Intro Section -->
             <div id="intro-section" class="container-fluid">
                 <div class="row">
                     <!-- Text -->
                     <div id="intro-text-col" class="col my-auto">
-                        <p class="text-main">Main text</p>
-                        <p class="text-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque est orci, vehicula ac porttitor in, vulputate quis orci.</p>
+                        <p class="text-main">be mindful beverages</p>
+                        <p class="text-sub">We believe that an honest product doesn't have anything to hide. our ingredients are naturally sourced and our flavors are genuine.</p>
                         <a class="btn btn-outline-secondary">Shop Now</a>
                     </div>
                     
                     <!-- Image -->
                     <div id="intro-image-col" class="col my-auto">
-                        <img src="can.png">
+                        <img src="bmb_dropshadow-01.png" style="opacity: 0.5; filter: drop-shadow(-7px 7px 7px rgba(0,0,0,0.5))">
                     </div>
                 </div>
             </div>
@@ -68,7 +73,7 @@
             
             <!-- Tagline Section -->
             <div id="tagline-section">
-                <p>be better. be mindful.</p>
+                <p class="text-main">be better. be mindful.</p>
             </div>
             
             <!-- Section Divider -->
@@ -84,26 +89,26 @@
                     
                     <!-- Text -->
                     <div id="about-text-col" class="col my-auto">
-                        <p id="about-title" class="text-main">About the Product</p>
-                        <p class="text-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus ligula sed nisi scelerisque lacinia. Sed auctor ultrices sem sed egestas. Phasellus blandit, urna eu tristique vehicula, nibh risus porta massa, a iaculis libero sapien ut leo. Quisque elit est, elementum at est at, tristique hendrerit eros. Nullam auctor nibh ut odio varius placerat.</p>
+                        <p id="about-title" class="text-main">honey ginger lemonade</p>
+                        <p class="text-sub">infused with the natural energy of green tea, our honey ginger lemonade's blend of sweet citrus and bitter ginger will quench your thrist and rejuvenate your body.  </p>
                         <div id="about-icons" class="row">
-                            <div class="col">
+                            <div class="col text-sub">
                                 <i class="fas fa-lemon"></i>
                                 <span>ingredient 1</span>
                             </div>
-                            <div class="col">
+                            <div class="col text-sub">
                                 <i class="fas fa-apple-alt"></i>
                                 <span>ingredient 2</span>
                             </div>
-                            <div class="col">
+                            <div class="col text-sub">
                                 <i class="fas fa-cookie"></i>
                                 <span>ingredient 3</span>
                             </div>
-                            <div class="col">
+                            <div class="col text-sub">
                                 <i class="fas fa-stroopwafel"></i>
                                 <span>ingredient 4</span>
                             </div>
-                            <div class="col">
+                            <div class="col text-sub">
                                 <i class="fab fa-pagelines"></i>
                                 <span>ingredient 5</span>
                             </div>
@@ -119,7 +124,7 @@
             <div id="share-section" class="container-fluid">
                 <div class="row">
                     <div class="col">
-                        <p id="share-title" class="text-main">Share Your Story</p>
+                        <p id="share-title" class="text-main">share your story</p>
                         <p id="share-subtext" class="text-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus ligula sed nisi scelerisque lacinia. Sed auctor ultrices sem sed egestas. Phasellus blandit, urna eu tristique vehicula, nibh risus porta massa, a iaculis libero sapien ut leo. Quisque elit est, elementum at est at, tristique hendrerit eros. Nullam auctor nibh ut odio varius placerat.</p>
                         <div id="share-image-container">
                             <img src="https://via.placeholder.com/1200x1600?text=3+:+4">
@@ -215,5 +220,18 @@
             <!-- Bootstrap -->
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         </div>
+        
+        <script type="text/javascript">
+            $(window).scroll(function() {
+                /* console.log($(window).scrollTop()); */
+                if ($(window).scrollTop() > 630 && $(window).scrollTop() < 1300) {
+                    $("#bg").addClass("enable-bg");
+                    $("#home-page").addClass("enable-color");
+                } else {
+                    $("#bg").removeClass("enable-bg");
+                    $("#home-page").removeClass("enable-color");
+                }
+            });
+        </script>
     </body>
 </html>

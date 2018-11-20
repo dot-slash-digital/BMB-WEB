@@ -8,13 +8,18 @@ hr {
 }
 
 .text-main {
-    margin: 0;
+    margin: 0 0 15px 0;
     font-size: 42px;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s all;
 }
 
 .text-sub {
     margin: 0;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    transition: 1s all;
 }
 
 /* Navbar */
@@ -61,6 +66,33 @@ footer p {
 }
 
 /* Home Page */
+
+#bg {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -100;
+    
+    background: -webkit-linear-gradient(147deg, #f2ff19,#ff8000);  
+    background: -moz-linear-gradient(147deg, #f2ff19,#ff8000);  
+    background: -o-linear-gradient(147deg, #f2ff19,#ff8000);  
+    background: linear-gradient(147deg, #f2ff19,#ff8000);
+  
+    -webkit-transition: opacity 1s ease-out;  
+    -moz-transition: opacity 1s ease-out;  
+    -o-transition: opacity 1s ease-out;  
+    transition: opacity 1s ease-out;
+    
+    opacity: 0;
+}
+
+.enable-bg {
+    opacity: 1 !important;
+}
+
+.enable-color {
+    color: white;
+}
 
 /* Intro Section */
 
