@@ -105,10 +105,6 @@ footer p {
     padding: 5% 0;
 }
 
-#intro-text-col {
-    padding-left: 15%;
-}
-
 #intro-image-col {
     padding: 0 15%;
     text-align: center;
@@ -122,24 +118,58 @@ footer p {
     height: 425px;
 }
 
+@media screen and (max-width: 1200px) {
+    #intro-text-col {
+        padding: 5%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #intro-image-col {
+        display: none;
+    }
+
+    #intro-image-mobile {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    #intro-text-col {
+        padding-left: 15%;
+    }
+
+    #intro-image-col {
+        display: block;
+    }
+
+    #intro-image-mobile {
+        display: none;
+    }
+}
+
 /* Tagline Section */
 
 #tagline-section {
     width: 100%;
-    /* background-color: #c1c1c1; */
+    text-align: center;
 }
 
-#tagline-section p {
-    margin: 0;
+#tagline-section {
     padding: 5% 0;
-    text-align: center;
+}
+
+#tagline-section span {
+    display: inline-block;
+    margin: 4px;
 }
 
 /* About Section */
 
 #about-section {
     width: 100%;
-    /* background-color: #b2b1b1; */
 }
 
 #about-section .row {
@@ -149,10 +179,6 @@ footer p {
 #about-image-col {
     padding: 0 10%;
     text-align: center;
-}
-
-#about-text-col {
-    padding-right: 15%;
 }
 
 #about-title {
@@ -178,6 +204,30 @@ footer p {
     font-size: 10px;
 }
 
+@media screen and (max-width: 640px) {
+    #about-text-col {
+        width: 100%;
+        padding: 5%;
+    }
+
+    #about-image-col {
+        width: 100%;
+    }
+
+    #about-img {
+        padding-right: 0%;
+    }
+}
+@media screen and (min-width: 640px) {
+    #about-text-col {
+        padding-right: 15%;
+    }
+
+    #about-img {
+        padding-right: 15%;
+    }
+}
+
 /* Share Section */
 
 #share-section {
@@ -194,7 +244,6 @@ footer p {
 }
 
 #share-subtext {
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -205,6 +254,17 @@ footer p {
 #share-image-container img {
     width: calc(((100% - 15%) / 3) - 3px);
     margin: 0 2.5%;
+}
+
+@media screen and (max-width: 1200px) {
+    #share-subtext {
+        padding: 0 10%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #share-subtext {
+        width: 50%;
+    }
 }
 
 /* Shop Page */
@@ -226,30 +286,68 @@ footer p {
     margin: 0 25%;
 }
 
+#drinks-container {
+    text-align: center;
+}
+
+#apparel-container {
+    text-align: center;
+}
+
 /* Stories Page */
 
 #stories-outer {
     margin: 5% 0;
 }
 
-#stories-intro, #stories-share {
-    width: 50%;
-    margin: 0 auto 50px auto;
+@media screen and (max-width: 960px) {
+    #stories-intro, #stories-share {
+        width: 100%;
+        margin: 0 auto 30px auto;
+        padding: 0 5%;
+    }
+
+    #stories-intro .text-main, #stories-share p {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    #stories-gallery {
+        width: 75%;
+        margin: 0 auto;
+    }
 }
 
-#stories-intro .text-main, #stories-share p {
+@media screen and (min-width: 960px) {
+    #stories-intro, #stories-share {
+        width: 50%;
+        margin: 0 auto 50px auto;
+    }
+
+    #stories-intro .text-main, #stories-share p {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    #stories-gallery {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+#stories-intro .text-main {
+    margin-bottom: 10px;
+}
+
+#stories-gallery img {
     width: 100%;
-    text-align: center;
-    margin: 0;
+    padding: 5% 0;
 }
 
-#stories-gallery {
-    width: 75%;
-    margin: 0 auto;
-}
-
-#stories-gallery .row .col img {
-    width: 100%;
+#stories-gallery .col {
+    background-color: black;
 }
 
 #stories-gallery .row {
@@ -258,14 +356,61 @@ footer p {
 
 /* About Page */
 
-#about-mission .col, #about-story .col, #about-team .col {
-    width: 50%;
+#about-mission-text-container,
+#about-mission-image-container,
+#about-story-image-container,
+#about-story-text-container {
+    padding: 5%;
+}
+
+#about-mission-image-container, #about-story-image-container {
     margin: 5%;
 }
 
-#about-mission .col img, #about-story .col img {
-    margin: 10%;
+#about-mission-image-container img,
+#about-story-image-container img,
+#about-team-images-container img {
     width: 80%;
+    text-align: center;
+}
+
+#about-story-image-container img {
+    width: 80%;
+}
+
+#about-team-text-container, #about-team-images-container {
+    padding: 5%;
+}
+
+#about-team-images-container span {
+    display: block;
+}
+
+#about-team-images-container {
+    text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+    #about-mission-text-container,
+    #about-story-text-container,
+    #about-team-text-container {
+        text-align: center;
+    }
+    #about-mission-image-container,
+    #about-story-image-container,
+    #about-team-image-container {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #about-mission {
+        margin-top: 10%;
+    }
+}
+
+#about-join {
+    margin: 5% 0;
 }
 
 #about-join p {
@@ -273,23 +418,17 @@ footer p {
     text-align: center;
 }
 
-#about-team .col .row .col img {
-    width: 100%;
-}
-
-#about-team .col .row .col {
-    text-align: center;
-}
-
-#about-join {
-    margin: 5% 0;
-}
-
 /* Contact Page */
 
 #contact-outer {
-    width: 600px;
+    max-width: 600px;
     margin: 5% auto;
+}
+
+@media screen and (max-width: 650px) {
+    #contact-outer {
+        padding: 5%;
+    }
 }
 
 #contact-outer .text-main {
