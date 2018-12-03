@@ -388,30 +388,84 @@ footer p {
 
 /* About Page */
 
-#about-mission-text-container,
-#about-mission-image-container,
-#about-story-image-container,
-#about-story-text-container {
-    padding: 5%;
-}
-
-#about-mission-image-container, #about-story-image-container {
-    margin: 5%;
-}
-
 #about-mission-image-container img,
 #about-story-image-container img,
 #about-team-images-container img {
-    width: 80%;
-    text-align: center;
+    width: 100%;
 }
 
-#about-story-image-container img {
-    width: 80%;
-}
-
+#about-mission-text-container, #about-mission-image-container,
+#about-story-text-container, #about-story-image-container,
 #about-team-text-container, #about-team-images-container {
     padding: 5%;
+}
+
+#about-mission-text-container,
+#about-story-image-container,
+#about-team-text-container {
+    padding-left: 10%;
+}
+
+#about-mission-image-container,
+#about-story-text-container,
+#about-team-images-container {
+    padding-right: 10%;
+}
+
+@media (max-width: 767px) {
+    #about-mission-text-container .text-main,
+    #about-story-text-container .text-main,
+    #about-team-text-container .text-main {
+        text-align: center;
+    }
+    
+    #about-mission-image-container,
+    #about-story-image-container,
+    #about-team-images-container {
+        padding-top: 10% !important;
+        padding-bottom: 0 !important;
+    }
+    
+    #about-mission-text-container,
+    #about-story-text-container,
+    #about-team-text-container {
+        padding-bottom: 10% !important;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    #about-mission-image-container,
+    #about-story-image-container {
+        padding: 5% 35%;
+    }
+    
+    #about-mission-text-container,
+    #about-story-text-container,
+    #about-team-text-container {
+        padding: 5% 15%
+    }
+    
+    #about-team-images-container {
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 499px) {
+    #about-mission-text-container,
+    #about-story-text-container,
+    #about-team-text-container {
+        padding: 10%;
+    }
+    
+    #about-mission-image-container,
+    #about-story-image-container {
+        padding: 5% 25%;
+    }
+    
+    #about-team-images-container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }
 
 #about-team-images-container span {
@@ -422,32 +476,18 @@ footer p {
     text-align: center;
 }
 
-@media (max-width: 770px) {
-    #about-mission-text-container,
-    #about-story-text-container,
-    #about-team-text-container {
-        text-align: center;
-    }
-    #about-mission-image-container,
-    #about-story-image-container,
-    #about-team-image-container {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-
-    #about-mission {
-        margin-top: 10%;
-    }
+#about-team-images-container .row div {
+    margin-bottom: 15px;
 }
 
 #about-join {
-    margin: 5% 0;
+    margin: 10% 0;
 }
 
 #about-join p {
     width: 100%;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 /* Contact Page */
