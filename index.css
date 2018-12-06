@@ -24,13 +24,27 @@ hr {
 
 /* Navbar */
 
-.navbar-brand img {
-    /* background-color: #6d6d6d; */
-}
-
 .nav-link {
     padding-left: 1.9rem !important;
     padding-right: 1.9rem !important;
+}
+
+/* For "Option 1" */
+nav {
+    margin: 30px 0;
+    height: 41px;
+    margin-left: 50px;
+}
+
+nav .navbar-brand {
+    margin-left: -50px;
+    background-color: #343a40;
+    border-radius: 50%;
+    width: 90px;
+}
+
+nav .navbar-brand img {
+    margin-left: 7px;
 }
 
 /* Footer */
@@ -315,21 +329,76 @@ footer p {
     height: 100%;
 }
 
-#shop-outer .row .col {
+.shop-text, .shop-text p {
+    margin: 0;
     text-align: center;
-    /* height: calc(100% - 101px - 98px); */
+    color: white;
 }
 
-.shop-text {
-    margin: 0 25%;
+#drinks-container, #apparel-container, #drinks-container-bg, #apparel-container-bg {
+    transition: 1.0s ease-out;
 }
 
-#drinks-container {
-    text-align: center;
+#drinks-container, #apparel-container {
+    cursor: pointer;
 }
 
-#apparel-container {
-    text-align: center;
+#drinks-container-bg {
+    background: url(can2.png) no-repeat;
+}
+
+#apparel-container-bg {
+    background: url(shop-bg-apparel.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#drinks-container-bg, #apparel-container-bg {
+    position: absolute;
+    z-index: -5;
+    filter: grayscale(1) contrast(0.3);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 767px) {
+    #drinks-container, #apparel-container, #drinks-container-bg, #apparel-container-bg {
+        width: 100vw;
+    }
+    
+    #drinks-container-bg, #apparel-container-bg {
+        height: calc((100vh - 101px - 98px) / 2);
+    }
+    
+    #apparel-container-bg {
+        margin-top: calc((100vh - 101px - 98px) / 2);
+    }
+    
+    .shop-text p {
+        line-height: calc((100vh - 101px - 98px) / 2);
+    }
+}
+
+@media (min-width: 768px) {
+    #drinks-container, #apparel-container, #drinks-container-bg, #apparel-container-bg {
+        width: 50vw;
+    }
+    
+    #drinks-container-bg, #apparel-container-bg {
+        height: calc(100vh - 101px - 98px);
+    }
+    
+    #apparel-container-bg {
+        margin-left: 50vw;
+    }
+    
+    .shop-text p {
+        line-height: calc(100vh - 101px - 98px);
+    }
 }
 
 /* Stories Page */
