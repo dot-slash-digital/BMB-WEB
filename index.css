@@ -33,6 +33,10 @@ nav .navbar-brand img {
     margin-left: 7px;
 }
 
+.dark-bg {
+    background-color: #313131;
+}
+
 /* Footer */
 
 footer {
@@ -63,6 +67,10 @@ footer p {
 #footer-email-input {
     max-width: 300px;
     margin: 10px auto 0 auto;
+}
+
+.light-bg {
+    background-color: #f2f2f2;
 }
 
 /* Home Page */
@@ -111,7 +119,7 @@ footer p {
 }
 
 #intro-section .row div .btn {
-    margin-top: 15px;
+    margin-top: 16px;
 }
 
 #intro-section .row div img {
@@ -322,7 +330,7 @@ footer p {
 }
 
 #drinks-container, #apparel-container, #drinks-container-bg, #apparel-container-bg {
-    transition: 1.0s ease-out;
+    transition: 0.15s ease-out;
 }
 
 #drinks-container, #apparel-container {
@@ -397,6 +405,10 @@ footer p {
     width: 100%;
     text-align: center;
     margin: 0;
+}
+
+#stories-share p a {
+    margin-top: 16px;
 }
 
 #stories-gallery {
@@ -542,7 +554,11 @@ footer p {
 #about-join p {
     width: 100%;
     text-align: center;
-    margin-bottom: 5px;
+    margin: 0;
+}
+
+#about-join p a {
+    margin-top: 16px;
 }
 
 /* Contact Page */
@@ -576,4 +592,8 @@ footer p {
         width: 360px;
         margin: 0 auto 5% auto;
     }
+}
+
+.form-group {
+    margin-bottom: 16px !important;
 }
