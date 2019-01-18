@@ -462,27 +462,30 @@ footer p {
 }
 
 #about-mission-text-container, #about-mission-image-container,
-#about-story-text-container, #about-story-image-container,
-#about-team-text-container, #about-team-images-container {
+#about-story-text-container, #about-story-image-container {
     padding: 5%;
 }
 
 #about-mission-text-container,
-#about-story-image-container,
-#about-team-text-container {
+#about-story-image-container {
     padding-left: 10%;
 }
 
 #about-mission-image-container,
-#about-story-text-container,
-#about-team-images-container {
+#about-story-text-container {
     padding-right: 10%;
+}
+
+#about-team-text-container {
+    padding: 5% 10% 10% 10%;
+}
+#about-team-images-container {
+    padding: 10% 10% 0 10%;
 }
 
 @media (max-width: 767px) {
     #about-mission-text-container .text-main,
-    #about-story-text-container .text-main,
-    #about-team-text-container .text-main {
+    #about-story-text-container .text-main {
         text-align: center;
     }
     
@@ -508,19 +511,17 @@ footer p {
     
     #about-mission-text-container,
     #about-story-text-container,
-    #about-team-text-container {
-        padding: 5% 15%
-    }
-    
+    #about-team-text-container,
     #about-team-images-container {
-        padding-right: 5%;
+        padding: 5% 15%
     }
 }
 
 @media (max-width: 499px) {
     #about-mission-text-container,
     #about-story-text-container,
-    #about-team-text-container {
+    #about-team-text-container,
+    #about-team-images-container {
         padding: 10%;
     }
     
@@ -528,15 +529,29 @@ footer p {
     #about-story-image-container {
         padding: 5% 25%;
     }
-    
-    #about-team-images-container {
-        padding-left: 15%;
-        padding-right: 15%;
+}
+
+@media (min-width: 1000px) {
+    #about-team-text-container {
+        padding: 5% 20% 10% 20%;
     }
 }
 
-#about-team-images-container span {
+#about-team-text-container .text-main {
+    text-align: center;
+}
+
+#about-team-images-container .row div .text-main {
     display: block;
+    margin: 0;
+    padding: 5px 0 2.5px 0;
+    font-size: 18px;
+}
+
+#about-team-images-container .row div .text-sub {
+    display: block;
+    margin: 0;
+    font-size: 12px;
 }
 
 #about-team-images-container {
@@ -544,7 +559,46 @@ footer p {
 }
 
 #about-team-images-container .row div {
-    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+@media (max-width: 574px) {
+    #about-team-images-container .row div {
+        width: 50%;
+    }
+    
+    #about-team-images-container .row div:nth-child(3),
+    #about-team-images-container .row div:nth-child(4),
+    #about-team-images-container .row div:nth-child(5) {
+        padding-top: 15px;
+    }
+    
+    #about-team-images-container .row div:nth-child(5) {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 1039px) {
+    #about-team-images-container .row div {
+        width: calc(100% / 3);
+    }
+    
+    #about-team-images-container .row div:nth-child(4) {
+        margin-left: calc(100% / 6);
+        padding-top: 15px;
+    }
+    
+    #about-team-images-container .row div:nth-child(5) {
+        margin-right: calc(100% / 6);
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 1040px) {
+    #about-team-images-container .row div {
+        width: 20%;
+    }
 }
 
 #about-join {
