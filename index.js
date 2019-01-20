@@ -1,14 +1,22 @@
+// sets the opacity of the gradient background on the Home page
 $(window).scroll(function() {
-    /* console.log($(window).scrollTop()); */
-    if ($(window).scrollTop() > 630 && $(window).scrollTop() < 1300) {
-        $("#bg").addClass("enable-bg");
-        $("#home-page").addClass("enable-color");
-    } else {
-        $("#bg").removeClass("enable-bg");
-        $("#home-page").removeClass("enable-color");
-    }
+    var curr_pos = $(window).scrollTop(); // current position of top of window
+    var ckpt_1 = $("#intro-text-col > p.text-sub").offset().top;            // below: 0%                  |   above: ramp up to 100%
+    var ckpt_2 = $("#tagline-section > span:nth-child(1)").offset().top;    // below: ramp up to 100%     |   above: 100%
+    var ckpt_3 = $("#about-text-col > p.text-sub").offset().top;            // below: 100%                |   above: ramp down to 0%
+    var ckpt_4 = $("#divider-3").offset().top;                              // below: ramp down to 0%     |   above: 0%
+    
+    if (ckpt_1 <= curr_pos && curr_pos < ckpt_2)        // between checkpoint 1 & 2
+        $("#bg").css("opacity", (curr_pos - ckpt_1) / (ckpt_2 - ckpt_1));
+    else if (ckpt_2 <= curr_pos && curr_pos < ckpt_3)   // between checkpoint 2 & 3
+        $("#bg").css("opacity", 1);
+    else if (ckpt_3 <= curr_pos && curr_pos < ckpt_4)   // between checkpoint 3 & 4
+        $("#bg").css("opacity", 1 - ((curr_pos - ckpt_3) / (ckpt_4 - ckpt_3)));
+    else                                                // before checkpoint 1 or after checkpoint 4
+        $("#bg").css("opacity", 0);
 });
 
+// sets the background image sizes for the Drinks and Apparel sections on the Shop page
 $(window).resize(function() {
     // if screen width is 767px or smaller
     if ($("body").width() < 768) {
@@ -28,6 +36,7 @@ $(window).resize(function() {
 
 var hover_size = "20px";
 
+// hover animation for Drinks section on the Shop page
 $("#drinks-container").hover(function() {
     // on hover
     $("#drinks-container-bg").css("filter", "grayscale(0) contrast(1)");
@@ -61,6 +70,7 @@ $("#drinks-container").hover(function() {
     }
 });
 
+// hover animation for Apparel section on the Shop page
 $("#apparel-container").hover(function() {
     // on hover
     $("#apparel-container-bg").css("filter", "grayscale(0) contrast(1)");

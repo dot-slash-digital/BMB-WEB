@@ -86,10 +86,10 @@ footer p {
     background: -o-linear-gradient(147deg, #f2ff19,#ff8000);  
     background: linear-gradient(147deg, #f2ff19,#ff8000);
   
-    -webkit-transition: opacity 1s ease-out;  
+    /*-webkit-transition: opacity 1s ease-out;  
     -moz-transition: opacity 1s ease-out;  
     -o-transition: opacity 1s ease-out;  
-    transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;*/
     
     opacity: 0;
 }
