@@ -6,6 +6,10 @@ $(window).scroll(function() {
     var ckpt_3 = $("#about-text-col > p.text-sub").offset().top;            // below: 100%                |   above: ramp down to 0%
     var ckpt_4 = $("#divider-3").offset().top;                              // below: ramp down to 0%     |   above: 0%
     
+    // on screen sizes where ckpt_4 cannot be reached because the end of the Home page was reached first, move ckpt_4 up
+    if ($(document).height() - $(window).height() < $("#divider-3").offset().top)
+        ckpt_4 = $(document).height() - $(window).height() - 25;
+    
     if (ckpt_1 <= curr_pos && curr_pos < ckpt_2)        // between checkpoint 1 & 2
         $("#bg").css("opacity", (curr_pos - ckpt_1) / (ckpt_2 - ckpt_1));
     else if (ckpt_2 <= curr_pos && curr_pos < ckpt_3)   // between checkpoint 2 & 3
