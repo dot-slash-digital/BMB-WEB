@@ -1,0 +1,13 @@
+#photo-highlights {
+    height: 400px;
+}
+
+#photo-highlights .row {
+    height: 100%;
+}
+
+#photo-highlights .col {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
