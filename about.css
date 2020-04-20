@@ -1,5 +1,5 @@
 #photo-highlights .col:nth-child(1) {
-    background-image: url(images/test-a.jpeg);
+    background-image: url(images/test-c.jpeg);
 }
 
 #photo-highlights .col:nth-child(2) {
@@ -7,5 +7,5 @@
 }
 
 #photo-highlights .col:nth-child(3) {
-    background-image: url(images/test-c.jpeg);
+    background-image: url(images/test-a.jpeg);
 }
