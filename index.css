@@ -1,0 +1,26 @@
+#photo-highlights {
+    height: 400px;
+    background-color: red;
+}
+
+#photo-highlights .row {
+    height: 100%;
+}
+
+#photo-highlights .col {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#photo-highlights .col:nth-child(1) {
+    background-image: url(images/test-a.jpeg);
+}
+
+#photo-highlights .col:nth-child(2) {
+    background-image: url(images/test-b.jpeg);
+}
+
+#photo-highlights .col:nth-child(3) {
+    background-image: url(images/test-c.jpeg);
+}
