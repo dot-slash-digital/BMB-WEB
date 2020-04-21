@@ -1,3 +1,23 @@
+/* Typography */
+
+.title {
+    font-size: 84px;
+    font-weight: bold;
+    line-height: 130%;
+}
+
+/* Color Scheme */
+
+.text-color-white {
+    color: white;
+}
+
+.bg-color-primary {
+    background-color: blue;
+}
+
+/* Photo Highlights section */
+
 #photo-highlights {
     height: 400px;
 }
@@ -10,4 +30,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.clear {
+    clear: both;
 }
