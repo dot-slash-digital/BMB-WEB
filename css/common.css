@@ -1,3 +1,32 @@
+/* Right Info section */
+.right-info {
+    background-color: blue;
+}
+
+.right-info .container {
+    padding: 100px 0;
+}
+
+.right-info .col:nth-child(1) {
+    width: 70%;
+    padding: 0;
+}
+
+.right-info img {
+    width: 100%;
+}
+
+.right-info .col:nth-child(2) {
+    width: 50%;
+}
+
+.right-info .info {
+    padding: 50px 75px;
+    background-color: white;
+}
+
+/* Photo Highlights section */
+
 #photo-highlights {
     height: 400px;
 }
@@ -10,4 +39,13 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+
+
+
+
+
+.clear {
+    clear: both;
 }
