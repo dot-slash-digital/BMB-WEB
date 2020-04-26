@@ -19,6 +19,26 @@
     width: 100%;
 }
 
+/* Merch section */
+
+#merch {
+    background-image: url(../images/merch.png);
+    background-position: bottom right;
+    height: 600px;
+}
+
+#merch .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 150px 0;
+}
+
+#merch .title {
+    width: 450px;
+    margin-bottom: 30px;
+}
+
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {

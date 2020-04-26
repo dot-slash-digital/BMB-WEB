@@ -12,8 +12,34 @@
     color: white;
 }
 
+.text-color-primary {
+    color: blue;
+}
+
+.bg-color-white {
+    background-color: white;
+}
+
 .bg-color-primary {
     background-color: blue;
+}
+
+/* Buttons */
+
+.button {
+    border: 5px solid blue;
+    background-color: white;
+    color: blue;
+    padding: 18px 29px 13px 29px;
+    border-radius: 38px;
+}
+
+.button span {
+    font-size: 30px;
+}
+
+.button:link {
+    text-decoration: none;
 }
 
 /* Photo Highlights section */
