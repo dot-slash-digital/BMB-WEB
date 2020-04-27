@@ -4,6 +4,12 @@
 
 /* Typography */
 
+.title {
+    font-size: 84px;
+    font-weight: bold;
+    line-height: 130%;
+}
+
 .subtitle {
     font-size: 38px;
     font-weight: bold;
