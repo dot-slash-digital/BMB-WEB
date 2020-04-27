@@ -1,3 +1,7 @@
+.clear {
+    clear: both;
+}
+
 /* Typography */
 
 .title {
@@ -6,7 +10,22 @@
     line-height: 130%;
 }
 
+.subtitle {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 130%;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 175%;
+}
+
 /* Color Scheme */
+
+.text-color-primary {
+    color: blue;
+}
 
 .text-color-white {
     color: white;
@@ -14,6 +33,57 @@
 
 .bg-color-primary {
     background-color: blue;
+}
+
+.bg-color-secondary {
+    background-color: darkblue;
+}
+
+.bg-color-white {
+    background-color: white;
+}
+
+/* Info section */
+
+.info {
+    padding: 100px 0;
+}
+
+.info .container {
+    position: relative;
+}
+
+.info .content {
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.info .content > div {
+    padding: 50px 75px;
+}
+
+.info .content .subtitle {
+    margin-bottom: 5px;
+}
+
+.info img {
+    width: 70%;
+}
+
+/* Right Info section */
+
+.info.right .content {
+    right: 15px;
+}
+
+/* Left Info section */
+
+.info.left img {
+    float: right;
 }
 
 /* Photo Highlights section */
@@ -30,8 +100,4 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
-
-.clear {
-    clear: both;
 }
