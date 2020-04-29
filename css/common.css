@@ -43,6 +43,29 @@
     background-color: white;
 }
 
+/* Navbar */
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navbar .links {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+#navbar .links div:first-child {
+    margin-right: 90px;
+}
+
+#navbar img {
+    width: 70px;
+}
+
 /* Info section */
 
 .info {
