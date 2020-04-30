@@ -66,6 +66,18 @@
     width: 70px;
 }
 
+/* Jumbotron section */
+
+#jumbotron .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#jumbotron .text {
+    display: flex;
+    align-items: center;
+}
+
 /* Info section */
 
 .info {
