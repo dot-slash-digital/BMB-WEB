@@ -2,16 +2,9 @@
 
 #jumbotron .container {
     padding: 40px 0;
-    display: flex;
-    justify-content: space-between;
 }
 
-#jumbotron .left {
-    display: flex;
-    align-items: center;
-}
-
-#jumbotron .right {
+#jumbotron .image {
     width: 40%;
 }
 
