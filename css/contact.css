@@ -4,6 +4,33 @@
     padding-top: 25px;
 }
 
+#contact-form {
+    padding: 150px 0;
+}
+
+#contact-form .inner {
+    width: 60%;
+    margin: 0 auto;
+    padding: 75px 100px;
+}
+
+#contact-form .subtitle,
+#contact-form .description {
+    text-align: center;
+}
+
+#contact-form form {
+    margin-top: 25px;
+}
+
+#contact-form .form-control {
+    border: 2px solid blue;
+}
+
+#contact-form label {
+    margin-bottom: 0.25rem;
+}
+
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {
