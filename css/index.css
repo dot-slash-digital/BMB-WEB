@@ -2,16 +2,9 @@
 
 #jumbotron .container {
     padding: 40px 0;
-    display: flex;
-    justify-content: space-between;
 }
 
-#jumbotron .left {
-    display: flex;
-    align-items: center;
-}
-
-#jumbotron .right {
+#jumbotron .image {
     width: 40%;
 }
 
@@ -19,24 +12,90 @@
     width: 100%;
 }
 
+/* Latest Flavors section */
+
+#latest-flavors {
+    position: relative;
+}
+
+#latest-flavors .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 150px 0;
+}
+
+#latest-flavors .container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#latest-flavors .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 225px;
+}
+
+#latest-flavors .icons img:nth-child(2),
+#latest-flavors .icons img:nth-child(3) {
+    height: 64px;
+}
+
+#latest-flavors .icons img {
+    width: 64px;
+}
+
+#latest-flavors .subtitle {
+    margin: 5px 0;
+}
+
+#latest-flavors > img {
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+#latest-flavors img.left {
+    left: 0;
+}
+
+#latest-flavors img.right {
+    right: 0;
+}
+
 /* Merch section */
 
 #merch {
-    background-image: url(../images/merch.png);
-    background-position: bottom right;
-    height: 600px;
+    position: relative;
 }
 
 #merch .container {
     display: flex;
     align-items: center;
-    height: 100%;
+    position: relative;
+    z-index: 1;
     padding: 150px 0;
 }
 
 #merch .title {
     width: 450px;
     margin-bottom: 30px;
+}
+
+#merch > img {
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
 
 /* Photo Highlights section */

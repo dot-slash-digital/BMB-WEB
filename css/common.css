@@ -1,3 +1,15 @@
+.clear {
+    clear: both;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
 /* Typography */
 
 .title {
@@ -6,7 +18,22 @@
     line-height: 130%;
 }
 
+.subtitle {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 130%;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 175%;
+}
+
 /* Color Scheme */
+
+.text-color-primary {
+    color: blue;
+}
 
 .text-color-white {
     color: white;
@@ -24,22 +51,90 @@
     background-color: blue;
 }
 
-/* Buttons */
+.bg-color-secondary {
+    background-color: darkblue;
+}
 
-.button {
-    border: 5px solid blue;
+.bg-color-white {
     background-color: white;
-    color: blue;
-    padding: 18px 29px 13px 29px;
-    border-radius: 38px;
 }
 
-.button span {
-    font-size: 30px;
+/* Navbar */
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.button:link {
-    text-decoration: none;
+#navbar .links {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+#navbar .links div:first-child {
+    margin-right: 90px;
+}
+
+#navbar img {
+    width: 70px;
+}
+
+/* Jumbotron section */
+
+#jumbotron .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#jumbotron .text {
+    display: flex;
+    align-items: center;
+}
+
+/* Info section */
+
+.info {
+    padding: 100px 0;
+}
+
+.info .container {
+    position: relative;
+}
+
+.info .content {
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.info .content > div {
+    padding: 50px 75px;
+}
+
+.info .content .subtitle {
+    margin-bottom: 5px;
+}
+
+.info img {
+    width: 70%;
+}
+
+/* Right Info section */
+
+.info.right .content {
+    right: 15px;
+}
+
+/* Left Info section */
+
+.info.left img {
+    float: right;
 }
 
 /* Photo Highlights section */
@@ -56,8 +151,4 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
-
-.clear {
-    clear: both;
 }
