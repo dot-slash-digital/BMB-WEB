@@ -39,6 +39,14 @@
     color: white;
 }
 
+.text-color-primary {
+    color: blue;
+}
+
+.bg-color-white {
+    background-color: white;
+}
+
 .bg-color-primary {
     background-color: blue;
 }

@@ -71,6 +71,33 @@
     right: 0;
 }
 
+/* Merch section */
+
+#merch {
+    position: relative;
+}
+
+#merch .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 150px 0;
+}
+
+#merch .title {
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+#merch > img {
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {
