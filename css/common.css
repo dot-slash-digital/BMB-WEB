@@ -46,61 +46,45 @@
 
 /* Color Scheme */
 
-.text-color-primary {
-    color: blue;
-}
-
-.text-color-white {
-    color: white;
-}
-
-.text-color-primary {
-    color: blue;
-}
-
-.bg-color-white {
-    background-color: white;
-}
-
-.bg-color-primary {
-    background-color: blue;
-}
-
-.bg-color-secondary {
-    background-color: darkblue;
-}
-
-.bg-color-white {
-    background-color: white;
-}
-
-#contact-form .form-control {
-    border-color: blue;
-}
-
-#contact-form .form-control:focus {
-    color: blue;
-}
-
-#footer input {
-    border-color: white;
-}
-
-#footer input:focus{
-    background-color: darkblue;
-    color: white;
-}
-
+.text-color-primary,
+#contact-form .form-control:focus,
+#footer input:focus,
 #footer input::placeholder {
-    color: white;
+    color: #828282;
 }
+
 
 #footer input:-ms-input-placeholder {
-    color: white;
+    color: #828282;
 }
 
 #footer input::-ms-input-placeholder {
-    color: white;
+    color: #828282;
+}
+
+#contact-form .form-control,
+#footer input,
+#footer .social-media a {
+    border-color: #828282;
+}
+
+.text-color-white {
+    color: #fafafa;
+}
+
+.bg-color-primary,
+#footer input:focus {
+    background-color: #fafafa;
+}
+
+#navbar,
+.info .content > div,
+.section-banner,
+#contact-form .inner,
+#footer {
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* Navbar */
@@ -248,7 +232,8 @@
 }
 
 #footer .social-media a {
-    border: 2px white solid;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 50%;
     width: 32px;
     height: 32px;
