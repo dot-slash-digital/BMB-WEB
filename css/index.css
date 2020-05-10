@@ -12,6 +12,20 @@
     width: 100%;
 }
 
+#jumbotron .image,
+#jumbotron .text > div:nth-child(1) {
+    z-index: 2;
+}
+
+#bg-gradient {
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: blue;
+    z-index: 1;
+}
+
 /* Latest Flavors section */
 
 #latest-flavors {
