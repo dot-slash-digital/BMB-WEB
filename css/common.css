@@ -3,11 +3,15 @@
 }
 
 .button {
-    width: 200px;
-    height: 50px;
-    background-color: red;
-    border-radius: 10px;
     margin-top: 25px;
+    padding: 12px 24px;
+    
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 30px;
+    
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* Typography */
@@ -15,7 +19,8 @@
 .display,
 .title,
 .description,
-.caption {
+.caption,
+.button {
     font-family: 'Montserrat Alternates', sans-serif;
     line-height: 130%;
 }
@@ -49,7 +54,8 @@
 .text-color-primary,
 #contact-form .form-control:focus,
 #footer input:focus,
-#footer input::placeholder {
+#footer input::placeholder,
+.button {
     color: #828282;
 }
 
@@ -64,7 +70,8 @@
 
 #contact-form .form-control,
 #footer input,
-#footer .social-media a {
+#footer .social-media a,
+.button {
     border-color: #828282;
 }
 
@@ -214,7 +221,7 @@
 }
 
 #footer input {
-    border-width: 2px;
+    border-width: 2px 0 2px 2px;
     border-style: solid;
 }
 
@@ -224,6 +231,11 @@
 
 #footer .input > div:nth-child(1) {
     padding-bottom: 5px;
+}
+
+#footer .input button {
+    border-width: 2px;
+    font-size: 14px;
 }
 
 #footer .social-media {
