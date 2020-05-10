@@ -9,6 +9,12 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
+        <!-- FontAwesome CSS -->
+        <script src="https://kit.fontawesome.com/6fd3d7713b.js" crossorigin="anonymous"></script>
+        
+        <!-- Google Fonts CSS -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        
         <!-- CSS -->
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/contact.css">
@@ -18,10 +24,10 @@
             <div class="container">
                 <div class="links">
                     <div>
-                        <a class="text-color-white" href="">beverages</a>
+                        <a class="description text-color-white" href="">beverages</a>
                     </div>
                     <div>
-                        <a class="text-color-white" href="">merch</a>
+                        <a class="description text-color-white" href="">merch</a>
                     </div>
                 </div>
                 <div class="center">
@@ -31,10 +37,10 @@
                 </div>
                 <div class="links">
                     <div>
-                        <a class="text-color-white" href="about.html">about</a>
+                        <a class="description text-color-white" href="about.html">about</a>
                     </div>
                     <div>
-                        <a class="text-color-white" href="contact.html">contact</a>
+                        <a class="description text-color-white" href="contact.html">contact</a>
                     </div>
                 </div>
             </div>
@@ -43,13 +49,13 @@
             <div class="container">
                 <img src="images/test-e.png">
                 <div class="text">
-                    <div class="title text-color-primary">contact us.</div>
+                    <div class="display text-color-primary">contact us.</div>
                 </div>
             </div>
         </div>
         <div id="contact-form" class="bg-color-primary">
             <div class="inner bg-color-white">
-                <div class="subtitle text-color-primary">contact us.</div>
+                <div class="title text-color-primary">contact us.</div>
                 <div class="description text-color-primary">
                     ???
                     <br />
@@ -58,22 +64,22 @@
                 <form action="https://formspree.io/test@dotslashdigital.com" method="POST">
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label class="text-color-primary">full name *</label>
-                            <input type="text" class="form-control" name="Full Name" placeholder="">
+                            <label class="caption text-color-primary">full name *</label>
+                            <input type="text" class="form-control caption" name="Full Name" placeholder="">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label class="text-color-primary">phone number</label>
-                            <input type="tel" class="form-control" name="Phone Number" placeholder="">
+                            <label class="caption text-color-primary">phone number</label>
+                            <input type="tel" class="form-control caption" name="Phone Number" placeholder="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label class="text-color-primary">email address *</label>
-                            <input type="email" class="form-control" name="_replyto" placeholder="">
+                            <label class="caption text-color-primary">email address *</label>
+                            <input type="email" class="form-control caption" name="_replyto" placeholder="">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label class="text-color-primary">subject</label>
-                            <select type="text" class="custom-select form-control text-color-primary" name="Subject" placeholder="">
+                            <label class="caption text-color-primary">subject</label>
+                            <select type="text" class="custom-select form-control caption text-color-primary" name="Subject" placeholder="">
                                 <option selected value="choose one...">choose one...</option>
                                 <option value="option a">option a</option>
                                 <option value="option b">option b</option>
@@ -82,19 +88,19 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="text-color-primary">how'd you hear about us?</label>
-                        <input type="text" class="form-control" name="How'd You Hear About Us?" placeholder="">
+                        <label class="caption text-color-primary">how'd you hear about us?</label>
+                        <input type="text" class="form-control caption" name="How'd You Hear About Us?" placeholder="">
                     </div>
                     <div class="mb-3">
-                        <label class="text-color-primary">message *</label>
-                        <textarea class="form-control" rows="5" name="Message"></textarea>
+                        <label class="caption text-color-primary">message *</label>
+                        <textarea class="form-control caption" rows="5" name="Message"></textarea>
                     </div>
                     <div class="button"></div>
                 </form>
             </div>
         </div>
         <div class="section-banner bg-color-secondary">
-            <div class="text-color-white subtitle">@bemindfulbeverages #wecanallbebetter</div>
+            <div class="text-color-white title">@bemindfulbeverages #wecanallbebetter</div>
         </div>
         <div id="photo-highlights" class="container-fluid">
             <div class="row">
@@ -103,7 +109,40 @@
                 <div class="col"></div>
             </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer" class="bg-color-secondary">
+            <div class="container text-color-white">
+                <div class="links">
+                    <div>
+                        <a class="description text-color-white" href="">press</a>
+                    </div>
+                    <div>
+                        <a class="description text-color-white" href="">careers</a>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="caption">
+                        Sign up for news, offers, and more
+                    </div>
+                    <div class="caption input-group">
+                        <input type="text" class="form-control bg-color-secondary text-color-white" placeholder="your email">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">button</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="">
+                        <i class="fab fa-instagram text-color-white"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-facebook-f text-color-white"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter text-color-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
         
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
