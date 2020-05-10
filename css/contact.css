@@ -4,6 +4,8 @@
     padding-top: 25px;
 }
 
+/* Contact Form section */
+
 #contact-form {
     padding: 150px 0;
 }
@@ -14,8 +16,8 @@
     padding: 75px 100px;
 }
 
-#contact-form .subtitle,
-#contact-form .description {
+#contact-form .inner > div:nth-child(1),
+#contact-form .inner > div:nth-child(2) {
     text-align: center;
 }
 
@@ -24,7 +26,8 @@
 }
 
 #contact-form .form-control {
-    border: 2px solid blue;
+    border-width: 2px;
+    border-style: solid;
 }
 
 #contact-form label {

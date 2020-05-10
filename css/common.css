@@ -12,21 +12,36 @@
 
 /* Typography */
 
-.title {
-    font-size: 84px;
-    font-weight: bold;
+.display,
+.title,
+.description,
+.caption {
+    font-family: 'Montserrat Alternates', sans-serif;
     line-height: 130%;
 }
 
-.subtitle {
-    font-size: 38px;
-    font-weight: bold;
-    line-height: 130%;
+.display {
+    font-size: 84px;
+    font-weight: 800;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .description {
     font-size: 20px;
-    line-height: 175%;
+    font-weight: 400;
+}
+
+.caption {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.z-no-line {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Color Scheme */
@@ -59,8 +74,16 @@
     background-color: white;
 }
 
-#footer input  {
-    border: white 2px solid;
+#contact-form .form-control {
+    border-color: blue;
+}
+
+#contact-form .form-control:focus {
+    color: blue;
+}
+
+#footer input {
+    border-color: white;
 }
 
 #footer input:focus{
@@ -70,7 +93,6 @@
 
 #footer input::placeholder {
     color: white;
-    opacity: 1;
 }
 
 #footer input:-ms-input-placeholder {
@@ -87,7 +109,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 #navbar .links {
@@ -207,7 +229,16 @@
     text-align: center;
 }
 
-#footer .input > .description {
+#footer input {
+    border-width: 2px;
+    border-style: solid;
+}
+
+#footer input::placeholder {
+    opacity: 1;
+}
+
+#footer .input > div:nth-child(1) {
     padding-bottom: 5px;
 }
 
@@ -226,5 +257,5 @@
 }
 
 #footer .social-media a:not(:last-child) { 
-    margin-right: 30px;
+    margin-right: 25px;
 }

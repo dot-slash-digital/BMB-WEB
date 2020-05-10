@@ -41,6 +41,7 @@
     justify-content: space-between;
     align-items: flex-end;
     width: 225px;
+    margin-bottom: 15px;
 }
 
 #latest-flavors .icons img:nth-child(2),
@@ -85,8 +86,8 @@
     padding: 150px 0;
 }
 
-#merch .title {
-    width: 450px;
+#merch .container > div > div:nth-child(1) {
+    width: 550px;
     margin-bottom: 30px;
 }
 
