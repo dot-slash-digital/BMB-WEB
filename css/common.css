@@ -52,6 +52,10 @@
     font-weight: 400;
 }
 
+.description .bold {
+    font-weight: 600;
+}
+
 .caption {
     font-size: 16px;
     font-weight: 400;
@@ -334,6 +338,11 @@
     padding: 2px 0;
 }
 
+#footer .social-media a,
+#footer .social-media a i {
+    transition: 0.3s all;
+}
+
 #footer .social-media a:not(:last-child) { 
     margin-right: 25px;
 }
@@ -341,7 +350,6 @@
 
 #footer .social-media a:hover{
     text-decoration: none;
-    transition: 0.3s all;
 }
 
 #footer .social-media a:active{

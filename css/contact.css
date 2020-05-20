@@ -20,13 +20,18 @@
     padding: 75px 100px;
 }
 
+#contact-form .inner > div:nth-child(2) {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
 #contact-form .inner > div:nth-child(1),
 #contact-form .inner > div:nth-child(2) {
     text-align: center;
 }
 
 #contact-form form {
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 #contact-form .form-control {

@@ -1,5 +1,5 @@
-// Submission and input validation
-$("#contact-form").submit(function() {
+// Submission and input validation for contact form in Contact page
+$("#contact-form form").submit(function() {
     // Full Name (required)
     if ($("#contact-full-name").val() == "") {
         $("#contact-full-name").removeClass("is-valid");
@@ -7,6 +7,22 @@ $("#contact-form").submit(function() {
     } else {
         $("#contact-full-name").removeClass("is-invalid");
         $("#contact-full-name").addClass("is-valid");
+    }
+    
+    // Phone Number (optional)
+    if($("#contact-phone-number").val().length == 0){
+        $("#contact-phone-number").removeClass("is-invalid");
+        $("#contact-phone-number").removeClass("is-valid");
+    }
+    else if (
+        $("#contact-phone-number").val().replace(/\D/g,'').length != 10 || 
+        $("#contact-phone-number").val().length!=10
+    ) {
+        $("#contact-phone-number").removeClass("is-valid");
+        $("#contact-phone-number").addClass("is-invalid");
+    } else {
+        $("#contact-phone-number").removeClass("is-invalid");
+        $("#contact-phone-number").addClass("is-valid");
     }
 
     // Email Address (required)
@@ -16,29 +32,6 @@ $("#contact-form").submit(function() {
     } else {
         $("#contact-email-address").removeClass("is-invalid");
         $("#contact-email-address").addClass("is-valid");
-    }
-
-    // Message (required)
-    if ($("#contact-message").val() == "") {
-        $("#contact-message").removeClass("is-valid");
-        $("#contact-message").addClass("is-invalid");
-    } else {
-        $("#contact-message").removeClass("is-invalid");
-        $("#contact-message").addClass("is-valid");
-    }
-    
-    // Phone Number (optional)
-    if($("#contact-phone-number").val().length == 0){
-        $("#contact-phone-number").removeClass("is-invalid");
-        $("#contact-phone-number").removeClass("is-valid");
-    }
-    else if ($("#contact-phone-number").val().replace(/\D/g,'').length != 10 || 
-             $("#contact-phone-number").val().length!=10) {
-        $("#contact-phone-number").removeClass("is-valid");
-        $("#contact-phone-number").addClass("is-invalid");
-    } else {
-        $("#contact-phone-number").removeClass("is-invalid");
-        $("#contact-phone-number").addClass("is-valid");
     }
     
     // Subject (optional)
@@ -56,6 +49,15 @@ $("#contact-form").submit(function() {
     } else {
         $("#contact-referral").addClass("is-valid");
     }
+
+    // Message (required)
+    if ($("#contact-message").val() == "") {
+        $("#contact-message").removeClass("is-valid");
+        $("#contact-message").addClass("is-invalid");
+    } else {
+        $("#contact-message").removeClass("is-invalid");
+        $("#contact-message").addClass("is-valid");
+    }
         
     if ($("#contact-full-name").val() != "" &&
         $("#contact-email-address").val() != "" &&
@@ -64,6 +66,20 @@ $("#contact-form").submit(function() {
         return true;
     else
         return false;
+});
+
+// Submission and input validation for email subscription form in Footer
+$("#email-form").submit(function() {
+    // Email Address (required)
+    if ($("#email-form input").val() == "") {
+        $("#email-form input").removeClass("is-valid");
+        $("#email-form input").addClass("is-invalid");
+        return false;
+    } else {
+        $("#email-form input").removeClass("is-invalid");
+        $("#email-form input").addClass("is-valid");
+        return true;
+    }
 });
 
 // Remove form validity classes if a user edits the input
@@ -78,21 +94,4 @@ $("textarea").on('input', function() {
 $("select").on('input', function() {
     $(this).removeClass("is-valid");
     $(this).removeClass("is-invalid");
-});
-
-$("#email-form").submit(function() {
-    // Email Address (required)
-    if ($("#email-form input").val() == "") {
-        $("#email-form input").removeClass("is-valid");
-        $("#email-form input").addClass("is-invalid");
-    } else {
-        $("#email-form input").removeClass("is-invalid");
-        $("#email-form input").addClass("is-valid");
-    }
-    if ($("#email-form input").val() != "") {
-        return true;
-    }
-    else{
-        return false;
-    }
 });
