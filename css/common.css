@@ -136,6 +136,11 @@
     color:#676767;
 }
 
+.form-control:focus {
+    border-color: #828282;
+    box-shadow: 0 0 0 0.2rem rgba(130, 130, 130,.25);
+}
+
 /* Underline */
 
 .underline {
