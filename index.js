@@ -1,5 +1,5 @@
 // Submission and input validation
-$("form").submit(function() {
+$("#contact-form").submit(function() {
     // Full Name (required)
     if ($("#contact-full-name").val() == "") {
         $("#contact-full-name").removeClass("is-valid");
@@ -78,4 +78,21 @@ $("textarea").on('input', function() {
 $("select").on('input', function() {
     $(this).removeClass("is-valid");
     $(this).removeClass("is-invalid");
+});
+
+$("#email-form").submit(function() {
+    // Email Address (required)
+    if ($("#email-form input").val() == "") {
+        $("#email-form input").removeClass("is-valid");
+        $("#email-form input").addClass("is-invalid");
+    } else {
+        $("#email-form input").removeClass("is-invalid");
+        $("#email-form input").addClass("is-valid");
+    }
+    if ($("#email-form input").val() != "") {
+        return true;
+    }
+    else{
+        return false;
+    }
 });
