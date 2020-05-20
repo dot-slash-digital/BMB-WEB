@@ -64,23 +64,23 @@
                 <form action="https://formspree.io/test@dotslashdigital.com" method="POST">
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label class="caption text-color-primary">full name *</label>
-                            <input type="text" class="form-control caption" name="Full Name" placeholder="">
+                            <label class="caption text-color-primary">full name *</label>  
+                            <input id="contact-full-name" type="text" class="form-control caption is-default" name="Full Name" placeholder="">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="caption text-color-primary">phone number</label>
-                            <input type="tel" class="form-control caption" name="Phone Number" placeholder="">
+                            <input id="contact-phone-number" type="tel" class="form-control caption is-default" name="Phone Number" placeholder="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="caption text-color-primary">email address *</label>
-                            <input type="email" class="form-control caption" name="_replyto" placeholder="">
+                            <input id="contact-email-address" type="email" class="form-control caption is-default" name="_replyto" placeholder="">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="caption text-color-primary">subject</label>
-                            <select type="text" class="custom-select form-control caption text-color-primary" name="Subject" placeholder="">
-                                <option selected value="choose one...">choose one...</option>
+                            <select id="contact-subject" type="text" class="custom-select form-control caption text-color-primary is-default" name="Subject" placeholder="">
+                                <option selected value="default">choose one...</option>
                                 <option value="Product Feedback">product feedback</option>
                                 <option value="Wholesale Inquiry">wholesale inquiry</option>
                                 <option value="Event Inquiry">event inquiry</option>
@@ -92,11 +92,11 @@
                     </div>
                     <div class="mb-3">
                         <label class="caption text-color-primary">how'd you hear about us?</label>
-                        <input type="text" class="form-control caption" name="How'd You Hear About Us?" placeholder="">
+                        <input id="contact-referral" type="text" class="form-control caption is-default" name="How'd You Hear About Us?" placeholder="">
                     </div>
                     <div class="mb-3">
                         <label class="caption text-color-primary">message *</label>
-                        <textarea class="form-control caption" rows="5" name="Message"></textarea>
+                        <textarea id="contact-message" class="form-control caption is-default" rows="5" name="Message"></textarea>
                     </div>
                     <input type="submit" class="button" value="send">
                 </form>
@@ -153,5 +153,6 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
     </body>
 </html>
