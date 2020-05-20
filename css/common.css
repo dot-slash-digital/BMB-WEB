@@ -68,6 +68,7 @@
 /* Color Scheme */
 
 .text-color-primary,
+#contact-form .form-control,
 #contact-form .form-control:focus,
 #footer input:focus,
 #footer input::placeholder,
@@ -95,6 +96,7 @@
 }
 
 .bg-color-primary,
+#contact-form .form-control:focus,
 #footer input:focus {
     background-color: #fafafa;
 }
