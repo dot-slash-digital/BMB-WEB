@@ -1,5 +1,10 @@
 .button {
-    width: 193px;
+        width: 193px;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .button {
+        width: 165px;
+    }
 }
 
 /* Jumbotron section */

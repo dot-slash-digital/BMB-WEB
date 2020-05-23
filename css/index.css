@@ -92,6 +92,13 @@
     width: 171px;
 }
 
+@media (max-width: 992px) and (min-width: 767px){
+    .info.right .button { 
+        width: 148px;
+    }
+}
+    
+
 /* Merch section */
 
 #merch {
