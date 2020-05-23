@@ -256,18 +256,28 @@
 
 /* Photo Highlights section */
 
-#photo-highlights {
-    height: 400px;
-}
-
-#photo-highlights .row {
-    height: 100%;
-}
-
 #photo-highlights .col {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+@media (min-width: 451px) {
+    #photo-highlights .row {
+        height: 100%;
+    }
+    
+    #photo-highlights .col {
+        height: 33vw;
+    }
+}
+
+@media (max-width: 450px){
+    #photo-highlights .row {
+        width: 100vw;
+        height: 200vw;
+        flex-direction: column;
+    } 
 }
 
 /* Section Banner sections */
