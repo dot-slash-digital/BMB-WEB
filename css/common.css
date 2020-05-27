@@ -181,6 +181,14 @@
     padding-bottom: 12px;
 }
 
+#navbar .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
 #navbar .links {
     display: flex;
     align-items: center;
@@ -191,8 +199,9 @@
     margin-right: 90px;
 }
 
+#navbar .links,
 #navbar img {
-    width: 70px;
+    height: 70px;
 }
 
 /* Jumbotron section */
@@ -374,6 +383,19 @@
     margin-right: 90px;
 }
 
+#footer .links,
+#footer form {
+    height: 63px;
+}
+
+#footer form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
 #footer .input {
     text-align: center;
 }
@@ -421,7 +443,7 @@
 }
 
 #footer .social-media a:not(:last-child) { 
-    margin-right: 25px;
+    margin-right: 40px;
 }
 
 #footer .social-media a:hover{
