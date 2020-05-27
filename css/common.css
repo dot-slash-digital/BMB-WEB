@@ -5,24 +5,17 @@
 .button {
     margin-top: 25px;
     padding: 12px 24px;
-    
     border-width: 4px;
     border-style: solid;
     border-radius: 30px;
-    
     font-size: 20px;
     font-weight: 600;
-    
-    display:block;
-    
+    display: block;
     transition: 0.3s all;
 }
 
-.button:hover{
-    text-decoration: none;
-}
-
-.button:active{
+.button:hover,
+.button:active {
     text-decoration: none;
 }
 
@@ -85,10 +78,17 @@
     color: #828282;
 }
 
+.button,
 .is-default,
 #footer .social-media a,
-.button {
+.form-control:focus {
     border-color: #828282;
+}
+
+#footer .social-media a:hover,
+.button:hover,
+.underline:after {
+    background-color: #828282;
 }
 
 .text-color-white {
@@ -101,20 +101,22 @@
     background-color: #fafafa;
 }
 
-#navbar,
-.info .content > div,
-.section-banner,
-#contact-form .inner,
-#footer {
-    z-index: 10;
-    position: relative;
-    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
+#footer .input button:active,
+#footer .social-media a:active,
+.button:active {
+    border-color: #676767;
 }
 
-#footer .social-media a:hover,
-.button:hover,
-.underline:after {
-    background-color: #828282;
+#footer .input button:active,
+#footer .social-media a:active,
+.button:active,
+.underline:active:after {
+    background-color: #676767;
+}
+
+#footer .links a:active,
+#navbar .links a:active {
+    color: #676767;
 }
 
 #footer .input button:active, 
@@ -125,24 +127,17 @@
     color: white;
 }
 
-#footer .input button:active,
-#footer .social-media a:active,
-.button:active {
-    border-color: #676767;
-    background-color: #676767;
-}
-
-.underline:active:after {
-    background-color: #676767;
-}
-
-#footer .links a:active,
-#navbar .links a:active {
-    color:#676767;
+#navbar,
+.info .content > div,
+.section-banner,
+#contact-form .inner,
+#footer {
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .form-control:focus {
-    border-color: #828282;
     box-shadow: 0 0 0 0.2rem rgba(130, 130, 130,.25);
 }
 
@@ -151,6 +146,7 @@
 .underline {
     position: relative;
 }
+
 .underline:after {
     content: "";
     position: absolute;
@@ -276,7 +272,7 @@
         left: 0;
         right: 0;
     }
-    .description {
+    .info .description {
         font-size: 16px;
         margin-top: 5px;
     }

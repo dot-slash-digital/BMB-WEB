@@ -13,7 +13,7 @@
 }
 
 #jumbotron .image,
-#jumbotron .text > div:nth-child(1) {
+#jumbotron .display {
     z-index: 2;
 }
 
@@ -39,7 +39,6 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    padding: 150px 0;
 }
 
 #latest-flavors .container > div {
@@ -58,11 +57,6 @@
     margin-bottom: 15px;
 }
 
-#latest-flavors .icons img:nth-child(2),
-#latest-flavors .icons img:nth-child(3) {
-    height: 64px;
-}
-
 #latest-flavors .icons img {
     width: 64px;
 }
@@ -72,7 +66,6 @@
 }
 
 #latest-flavors > img {
-    width: 350px;
     position: absolute;
     bottom: 0;
     z-index: 0;
@@ -84,6 +77,36 @@
 
 #latest-flavors img.right {
     right: 0;
+}
+
+@media (min-width: 1330px) {
+    #latest-flavors > img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1329px) {
+    #latest-flavors > img {
+        width: 30%;
+    }
+}
+
+@media (min-width: 550px) {
+    #latest-flavors .container {
+        padding: 150px 0;
+    }
+}
+
+@media (max-width: 549px) {
+    #latest-flavors .container {
+        padding: 120px 0;
+    }
+}
+
+@media (max-width: 340px) {
+    #latest-flavors .description {
+        font-size: 18px;
+    }
 }
 
 /* Right Info section */
@@ -113,7 +136,7 @@
     padding: 150px 0;
 }
 
-#merch .container > div > div:nth-child(1) {
+#merch .display {
     width: 550px;
     margin-bottom: 30px;
 }
