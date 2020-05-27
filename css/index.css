@@ -18,12 +18,94 @@
 }
 
 #bg-gradient {
-    height: 60%;
     width: 100%;
     position: absolute;
     left: 0;
     background-color: blue;
     z-index: 1;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #jumbotron .display {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    #bg-gradient {
+        height: 370px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #jumbotron .display {
+        font-size: 60px;
+    }
+    
+    #bg-gradient {
+        height: 275px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #jumbotron .display {
+        font-size: 42px;
+    }
+    
+    #bg-gradient {
+        height: 205px;
+    }
+}
+
+@media (max-width: 575px) {
+    #jumbotron .container {
+        flex-direction: column-reverse;
+    }
+    
+    #jumbotron .image {
+        margin: 0 auto;
+    }
+    
+    #jumbotron .display {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 575px) {
+    #jumbotron .display {
+        font-size: 48px;
+    }
+    
+    #bg-gradient {
+        height: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    #jumbotron .container {
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 449px) {
+    #jumbotron .display {
+        font-size: 42px;
+    }
+    
+    #bg-gradient {
+        height: 250px;
+    }
+}
+
+@media (max-width: 374px) {
+    #jumbotron .display {
+        font-size: 32px;
+    }
+    
+    #bg-gradient {
+        height: 210px;
+    }
 }
 
 /* Latest Flavors section */
@@ -151,6 +233,27 @@
 
 #merch .button {
     width: 180px;
+}
+
+/* Section Banner sections */
+
+@media (max-width: 300px) {
+    .section-banner.third br {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 310px) {
+    .section-banner.first br,
+    .section-banner.second br {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 410px) {
+    .section-banner.fourth br {
+        display: inline-block;
+    }
 }
 
 /* Photo Highlights section */

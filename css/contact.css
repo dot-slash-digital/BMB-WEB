@@ -76,6 +76,14 @@
     }
 }
 
+/* Section Banner section */
+
+@media (max-width: 750px) {
+    .section-banner br {
+        display: inline-block;
+    }
+}
+
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {

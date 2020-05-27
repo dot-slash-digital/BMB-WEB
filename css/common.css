@@ -348,24 +348,8 @@
 }
 
 @media (max-width: 450px) {
-    .section-banner br {
-        display: inline-block;
-    }
-}
-@media (min-width: 300px) and (max-width: 350px) {
-    .section-banner br {
-        display: inline-block;
-    }
     .section-banner .title {
-        font-size: 16px;
-    }
-}
-@media (min-width: 351px) and (max-width: 450px) {
-    .section-banner br {
-        display: inline-block;
-    }
-    .section-banner .title {
-        font-size: 16px;
+        font-size: 24px;
     }
 }
 
@@ -416,7 +400,6 @@
     text-decoration: none;
 }
 
-
 #footer .social-media {
     display: flex;
     align-items: center;
@@ -440,7 +423,6 @@
 #footer .social-media a:not(:last-child) { 
     margin-right: 25px;
 }
-
 
 #footer .social-media a:hover{
     text-decoration: none;

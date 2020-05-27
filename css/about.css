@@ -13,6 +13,14 @@
     padding-top: 25px;
 }
 
+/* Section Banner section */
+
+@media (max-width: 610px) {
+    .section-banner br {
+        display: inline-block;
+    }
+}
+
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {
