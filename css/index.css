@@ -208,6 +208,7 @@
 
 #merch {
     position: relative;
+    overflow: hidden;
 }
 
 #merch .container {
@@ -219,7 +220,7 @@
 }
 
 #merch .display {
-    width: 550px;
+    max-width: 550px;
     margin-bottom: 30px;
 }
 
@@ -233,6 +234,97 @@
 
 #merch .button {
     width: 180px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #merch > img {
+        height: 80%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    #merch > img {
+        height: 70%;
+        right: -20%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #merch .display {
+        width: 400px;
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 575px) {
+    #merch {
+        text-align: center;
+    }
+    
+    #merch a {
+        margin: 0 auto;
+    }
+    
+    #merch img {
+        height: 85%;
+        bottom: -40%;
+        right: -25%;
+    }
+}
+
+@media (max-width: 549px) {
+    #merch .container {
+        padding: 120px 0;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 575px) {
+    #merch .display {
+        font-size: 48px;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 475px) {
+    #merch .display {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 475px) {
+    #merch .display {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+    #merch img {
+        right: -30%;
+    }
+}
+
+@media (max-width: 400px) {
+    #merch img {
+        right: -40%;
+        bottom: -45%;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 475px) {
+    #merch .display {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 350px) {
+    #merch .display {
+        font-size: 30px;
+    }
+    
+    #merch .button {
+        font-size: 18px;
+        width: 167px;
+    }
 }
 
 /* Section Banner sections */
