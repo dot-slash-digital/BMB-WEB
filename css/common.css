@@ -253,14 +253,23 @@
     height: 70px;
 }
 
+#navbar .gradient-bg {
+    position: absolute;
+    z-index: 0;
+    width: 68px;
+    height: 68px;
+    margin: 1px;
+}
+
+#navbar img {
+    position: relative;
+    z-index: 1;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     #navbar .links div:first-child {
         margin-right: 60px;
     }
-}
-
-#navbar img {
-    background-color: blue;
 }
 
 /* Jumbotron section */
