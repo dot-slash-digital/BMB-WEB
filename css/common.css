@@ -172,6 +172,55 @@
     width: 100%;
 }
 
+/* Gradient Background */
+
+.gradient-bg {
+    background: linear-gradient(135deg,
+        #2E3192, #00AEEF, /* blueberry basil */
+        #F7941D, #F9ED32, /* lemon ginger */
+        #9E1F63, #ED1C24 /* apple mint */
+    );
+    background-size: 1200vw 60vh;
+
+    -webkit-animation: gradient-animation 60s ease infinite;
+    -moz-animation: gradient-animation 60s ease infinite;
+    animation: gradient-animation 60s ease infinite;
+}
+
+@-webkit-keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 00% 50%;
+    }
+}
+@-moz-keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 10% 50%;
+    }
+    50% {
+        background-position: 90% 50%;
+    }
+    100% {
+        background-position: 10% 50%;
+    }
+}
+
 /* Navbar */
 
 #navbar .container {
@@ -202,6 +251,16 @@
 #navbar .links,
 #navbar img {
     height: 70px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #navbar .links div:first-child {
+        margin-right: 60px;
+    }
+}
+
+#navbar img {
+    background-color: blue;
 }
 
 /* Jumbotron section */
@@ -456,6 +515,10 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     #footer .links div:first-child {
+        margin-right: 30px;
+    }
+    
+    #footer .social-media a:not(:last-child) {
         margin-right: 30px;
     }
 }
