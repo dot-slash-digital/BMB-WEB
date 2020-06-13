@@ -540,8 +540,24 @@
     #footer form {
         order: -1;
     }
-    #footer > .input-group {
+    #footer .input-group {
         margin: 0 auto;
-        width: 300px;
+        max-width: 300px;
+    }
+    #footer .links,
+    #footer .social-media {
+        justify-content: center;
+    }
+    #footer .links {
+        margin-bottom: 8px;
+    }
+    #footer .links div:first-child {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 398px) {
+    #footer .caption {
+        font-size: 10px;
     }
 }
