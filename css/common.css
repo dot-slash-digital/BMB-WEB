@@ -223,12 +223,14 @@
 
 /* Navbar */
 
+/*
 #navbar .container {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 12px;
 }
+*/
 
 #navbar .center {
     position: absolute;
@@ -238,14 +240,11 @@
     transform: translate(-50%,-50%);
 }
 
+
 #navbar .links {
     display: flex;
     align-items: center;
     font-size: 24px;
-}
-
-#navbar .links div:first-child {
-    margin-right: 90px;
 }
 
 #navbar .links,
@@ -253,12 +252,17 @@
     height: 70px;
 }
 
+#navbar .nav-link {
+    padding: 0;
+}
+
+
 #navbar .gradient-bg {
     position: absolute;
     z-index: 0;
-    width: 68px;
-    height: 68px;
     margin: 1px;
+    height: 68px;
+    width: 68px;
 }
 
 #navbar img {
@@ -266,10 +270,75 @@
     z-index: 1;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    #navbar .links div:first-child {
-        margin-right: 60px;
+#navbar .links {
+    display: flex;
+}
+
+#navbar .navbar-collapse {
+    justify-content: space-between;
+}
+
+#navbar .container {
+    justify-content: flex-end;
+}
+
+#navbar .navbar-toggler {
+    border: 0;
+}
+
+#navbar button:focus {
+    outline: 5px auto rgba(130, 130, 130, 0.5);
+}
+
+#navbar .navbar-toggler {
+    margin: 8px 0;
+}
+
+#navbar {
+    padding: 10px 0 12px 0;
+}
+
+#navbar .center {
+    top: 45px;
+}
+
+@media (max-width: 991px) { 
+    #navbar .show,
+    #navbar .collapsing {
+        display: flex;
+        justify-content: center;
     }
+    #navbar .navbar-collapse {
+        padding-top: 12px;
+    }
+    #navbar .container {
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 549px) {
+
+}
+
+@media (min-width: 550px) and (max-width: 768px) {
+    #navbar .links:first-child,
+    #navbar .links div:first-child {
+        margin-right: 45px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    #navbar .links:first-child,
+    #navbar .links div:first-child {
+        margin-right: 90px;
+    }
+}
+
+@media (min-width: 992px) {
+    #navbar .links div:first-child {
+        margin-right: 90px;
+    }
+    
 }
 
 /* Jumbotron section */
