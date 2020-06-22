@@ -166,7 +166,8 @@
 
 .underline:hover:after,
 .underline:focus:after,
-.underline:active:after {
+.underline:active:after,
+.underline.active:after {
     left: 0;
     right: auto;
     width: 100%;
@@ -223,6 +224,24 @@
 
 /* Navbar */
 
+#navbar {
+    padding: 10px 0 12px 0;
+}
+
+#navbar .container {
+    justify-content: flex-end;
+}
+
+#navbar .navbar-toggler {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 0;
+}
+
+#navbar .navbar-collapse {
+    justify-content: space-between;
+}
+
 #navbar .center {
     position: absolute;
     top: 45px;
@@ -233,12 +252,9 @@
 
 #navbar img {
     height: 70px;
+    position: relative;
+    z-index: 1;
 }
-
-#navbar .nav-link {
-    padding: 0;
-}
-
 
 #navbar .gradient-bg {
     position: absolute;
@@ -248,31 +264,12 @@
     width: 68px;
 }
 
-#navbar img {
-    position: relative;
-    z-index: 1;
-}
-
-#navbar .navbar-collapse {
-    justify-content: space-between;
-}
-
-#navbar .container {
-    justify-content: flex-end;
+#navbar .nav-link {
+    padding: 0;
 }
 
 #navbar button:focus {
     outline: 5px auto rgba(130, 130, 130, 0.5);
-}
-
-#navbar .navbar-toggler {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border: 0;
-}
-
-#navbar {
-    padding: 10px 0 12px 0;
 }
 
 @media (max-width: 991px) {
