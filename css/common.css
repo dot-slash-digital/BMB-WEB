@@ -223,31 +223,14 @@
 
 /* Navbar */
 
-/*
-#navbar .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 12px;
-}
-*/
-
 #navbar .center {
     position: absolute;
-    top: 50%;
+    top: 45px;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
 
-
-#navbar .links {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-}
-
-#navbar .links,
 #navbar img {
     height: 70px;
 }
@@ -270,10 +253,6 @@
     z-index: 1;
 }
 
-#navbar .links {
-    display: flex;
-}
-
 #navbar .navbar-collapse {
     justify-content: space-between;
 }
@@ -282,42 +261,72 @@
     justify-content: flex-end;
 }
 
-#navbar .navbar-toggler {
-    border: 0;
-}
-
 #navbar button:focus {
     outline: 5px auto rgba(130, 130, 130, 0.5);
 }
 
 #navbar .navbar-toggler {
-    margin: 8px 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 0;
 }
 
 #navbar {
     padding: 10px 0 12px 0;
 }
 
-#navbar .center {
-    top: 45px;
+@media (max-width: 991px) {
+    #navbar .container {
+        padding: 8px 0;
+    }
+    
+    #navbar .navbar-collapse {
+        align-items: baseline;
+    }
 }
 
-@media (max-width: 991px) { 
+@media (max-width: 549px) {
+    #navbar button,
+    #navbar .links {
+        margin-right: 15px;
+    }
+    
+    #navbar .links {
+        text-align: right;
+    }
+    
+    #navbar .links a {
+        display: inline-block;
+    }
+    
+    #navbar .links:nth-child(1) > div:not(:first-child),
+    #navbar .links:nth-child(2) > div {
+        margin-top: 8px;
+    }
+    
+    #navbar .navbar-collapse .links:first-child {
+        padding-top: 28px;
+    }
+}
+
+@media (min-width: 550px) {
+    #navbar .links {
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 991px) {
     #navbar .show,
     #navbar .collapsing {
         display: flex;
         justify-content: center;
     }
-    #navbar .navbar-collapse {
-        padding-top: 12px;
+    
+    #navbar .links {
+        margin-top: 12px;
     }
-    #navbar .container {
-        padding: 8px 0;
-    }
-}
-
-@media (max-width: 549px) {
-
 }
 
 @media (min-width: 550px) and (max-width: 768px) {
