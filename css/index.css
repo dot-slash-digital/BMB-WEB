@@ -131,16 +131,15 @@
 }
 
 #latest-flavors .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 225px;
     margin-bottom: 15px;
 }
 
 #latest-flavors .icons img {
-    width: 64px;
+    width: 80px;
+}
+
+#latest-flavors .icons img:not(:last-child) {
+    margin-right: 8px;
 }
 
 #latest-flavors .subtitle {

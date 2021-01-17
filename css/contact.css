@@ -42,6 +42,14 @@
     margin-bottom: 0.25rem;
 }
 
+#contact-form .asterisk {
+    color: #e60000;
+}
+
+#contact-subject {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='rgb(130, 130, 130)' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
+}
+
 @media (max-width: 992px) and (min-width: 577px){
     #contact-form .inner { 
         width: 80%;
