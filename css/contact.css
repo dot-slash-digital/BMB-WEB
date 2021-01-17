@@ -95,13 +95,15 @@
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {
-    background-image: url(../images/test-b.jpeg);
+    background-image: url("../images/IMG_7414.jpg");
+    background-position: right center;
 }
 
 #photo-highlights .col:nth-child(2) {
-    background-image: url(../images/test-c.jpeg);
+    background-image: url("../images/IMG_7188.jpg");
 }
 
 #photo-highlights .col:nth-child(3) {
-    background-image: url(../images/test-a.jpeg);
+        background-image: url("../images/IMG_7392.jpg");
+    background-position: right center;
 }
