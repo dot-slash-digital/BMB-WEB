@@ -1,0 +1,49 @@
+#careers {
+    padding: 172px 0;
+}
+
+#careers .content {
+    padding: 64px;
+    box-shadow: 0 4px 120px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+#careers .title {
+    margin-bottom: 8px;
+}
+
+#careers form {
+    max-width: 350px;
+    margin: 24px auto 0 auto;
+}
+
+#careers form input {
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    background-color: #ffffff;
+}
+
+#careers form input:focus {
+    border-width: 2px 1px 2px 2px;
+}
+
+#careers form button {
+    border-width: 2px;
+    font-size: 14px;
+}
+
+/* Photo Highlights section */
+
+#photo-highlights .col:nth-child(1) {
+    background-image: url("../images/IMG_7184.jpg");
+    background-position: right center;
+}
+
+#photo-highlights .col:nth-child(2) {
+    background-image: url("../images/IMG_7200.jpg");
+}
+
+#photo-highlights .col:nth-child(3) {
+        background-image: url("../images/IMG_7414.jpg");
+    background-position: right center;
+}

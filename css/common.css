@@ -66,8 +66,8 @@
 /* Color Scheme */
 
 .text-color-primary,
-#contact-form .form-control,
-#contact-form .form-control:focus,
+form .form-control,
+form .form-control:focus,
 #footer input:focus,
 #footer input::placeholder,
 .button,
@@ -548,6 +548,10 @@
     opacity: 1;
 }
 
+#footer input:focus {
+    border-width: 2px 1px 2px 2px;
+}
+
 #footer .input > div:nth-child(1) {
     padding-bottom: 5px;
 }
@@ -557,7 +561,7 @@
     font-size: 14px;
 }
 
-#footer .input button:active{
+#footer .input button:active {
     text-decoration: none;
 }
 
