@@ -36,7 +36,6 @@
 
 #photo-highlights .col:nth-child(1) {
     background-image: url("../images/IMG_7184.jpg");
-    background-position: right center;
 }
 
 #photo-highlights .col:nth-child(2) {
