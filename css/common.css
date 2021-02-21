@@ -121,13 +121,13 @@ form .form-control:focus,
 
 #footer .input button:active,
 #footer .social-media a:active,
-.button:active {
+.button:active:not(.disabled) {
     border-color: #676767;
 }
 
 #footer .input button:active,
 #footer .social-media a:active,
-.button:active,
+.button:active:not(.disabled),
 .underline:active:after {
     background-color: #676767;
 }
