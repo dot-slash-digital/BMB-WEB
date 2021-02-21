@@ -345,21 +345,21 @@ form .form-control:focus,
 }
 
 @media (min-width: 550px) and (max-width: 768px) {
-    #navbar .links:first-child,
-    #navbar .links div:first-child {
+    #navbar .links:not(:last-child),
+    #navbar .links div:not(:last-child) {
         margin-right: 45px;
     }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-    #navbar .links:first-child,
-    #navbar .links div:first-child {
+    #navbar .links:not(:last-child),
+    #navbar .links div:not(:last-child) {
         margin-right: 90px;
     }
 }
 
 @media (min-width: 992px) {
-    #navbar .links div:first-child {
+    #navbar .links div:not(:last-child) {
         margin-right: 90px;
     }
     
