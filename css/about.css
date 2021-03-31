@@ -1,16 +1,15 @@
+:root {
+    --navbar-height: 92px;
+}
+
 .button {
         width: 193px;
 }
+
 @media (max-width: 992px) and (min-width: 768px) {
     .button {
         width: 165px;
     }
-}
-
-/* Jumbotron section */
-
-#jumbotron img {
-    padding-top: 25px;
 }
 
 /* Section Banner section */

@@ -41,7 +41,7 @@
     #jumbotron .display {
         font-size: 60px;
     }
-    
+
     #bg-gradient {
         height: 275px;
     }
@@ -51,7 +51,7 @@
     #jumbotron .display {
         font-size: 42px;
     }
-    
+
     #bg-gradient {
         height: 205px;
     }
@@ -61,11 +61,11 @@
     #jumbotron .container {
         flex-direction: column-reverse;
     }
-    
+
     #jumbotron .image {
         margin: 0 auto;
     }
-    
+
     #jumbotron .display {
         text-align: center;
         width: 100%;
@@ -76,7 +76,7 @@
     #jumbotron .display {
         font-size: 48px;
     }
-    
+
     #bg-gradient {
         height: 300px;
     }
@@ -92,7 +92,7 @@
     #jumbotron .display {
         font-size: 42px;
     }
-    
+
     #bg-gradient {
         height: 250px;
     }
@@ -102,7 +102,7 @@
     #jumbotron .display {
         font-size: 32px;
     }
-    
+
     #bg-gradient {
         height: 210px;
     }
@@ -112,6 +112,7 @@
 
 #latest-flavors {
     position: relative;
+    overflow: hidden;
 }
 
 #latest-flavors .container {
@@ -148,16 +149,18 @@
 
 #latest-flavors > img {
     position: absolute;
-    bottom: 0;
     z-index: 0;
 }
 
 #latest-flavors img.left {
     left: 0;
+    bottom: 0;
 }
 
 #latest-flavors img.right {
-    right: 0;
+    right: -70px;
+    bottom: -280px;
+    transform: rotate(-30deg);
 }
 
 @media (min-width: 1330px) {
@@ -197,11 +200,11 @@
 }
 
 @media (max-width: 992px) and (min-width: 767px){
-    .info.right .button { 
+    .info.right .button {
         width: 148px;
     }
 }
-    
+
 
 /* Merch section */
 
@@ -259,11 +262,11 @@
     #merch {
         text-align: center;
     }
-    
+
     #merch a {
         margin: 0 auto;
     }
-    
+
     #merch img {
         height: 85%;
         bottom: -40%;
@@ -319,7 +322,7 @@
     #merch .display {
         font-size: 30px;
     }
-    
+
     #merch .button {
         font-size: 18px;
         width: 167px;
