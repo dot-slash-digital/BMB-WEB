@@ -60,14 +60,14 @@
 }
 
 #photo-highlights .col:nth-child(1) {
-    background-image: url("../images/IMG_7392.jpg");
+    background-image: url("../images/photo-highlight-9.jpg");
     background-position: right center;
 }
 
 #photo-highlights .col:nth-child(2) {
-    background-image: url("../images/IMG_7223.jpg");
+    background-image: url("../images/photo-highlight-1.jpg");
 }
 
 #photo-highlights .col:nth-child(3) {
-    background-image: url("../images/IMG_7377.jpg");
+    background-image: url("../images/photo-highlight-2.jpg");
 }

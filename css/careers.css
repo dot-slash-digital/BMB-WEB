@@ -35,14 +35,14 @@
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {
-    background-image: url("../images/IMG_7184.jpg");
+    background-image: url("../images/photo-highlight-3.jpg");
 }
 
 #photo-highlights .col:nth-child(2) {
-    background-image: url("../images/IMG_7200.jpg");
+    background-image: url("../images/photo-highlight-5.jpg");
 }
 
 #photo-highlights .col:nth-child(3) {
-        background-image: url("../images/IMG_7414.jpg");
+        background-image: url("../images/photo-highlight-7.jpg");
     background-position: right center;
 }

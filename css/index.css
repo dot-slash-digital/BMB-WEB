@@ -153,8 +153,9 @@
 }
 
 #latest-flavors img.left {
-    left: 0;
-    bottom: 0;
+    left: -70px;
+    bottom: -280px;
+    transform: rotate(30deg);
 }
 
 #latest-flavors img.right {
@@ -204,7 +205,6 @@
         width: 148px;
     }
 }
-
 
 /* Merch section */
 
@@ -353,13 +353,13 @@
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {
-    background-image: url("../images/IMG_7223.jpg");
+    background-image: url("../images/photo-highlight-1.jpg");
 }
 
 #photo-highlights .col:nth-child(2) {
-    background-image: url("../images/IMG_7377.jpg");
+    background-image: url("../images/photo-highlight-2.jpg");
 }
 
 #photo-highlights .col:nth-child(3) {
-    background-image: url("../images/IMG_7184.jpg");
+    background-image: url("../images/photo-highlight-3.jpg");
 }

@@ -23,13 +23,13 @@
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {
-    background-image: url("../images/IMG_7352.jpg");
+    background-image: url("../images/photo-highlight-4.jpg");
 }
 
 #photo-highlights .col:nth-child(2) {
-    background-image: url("../images/IMG_7200.jpg");
+    background-image: url("../images/photo-highlight-5.jpg");
 }
 
 #photo-highlights .col:nth-child(3) {
-    background-image: url("../images/IMG_7338.jpg");
+    background-image: url("../images/photo-highlight-6.jpg");
 }
