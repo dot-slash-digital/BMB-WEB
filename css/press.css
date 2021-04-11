@@ -59,6 +59,13 @@
     }
 }
 
+@media (max-width: 500px) {
+    #media-kit .title,
+    #press-releases .title {
+        font-size: 24px;
+    }
+}
+
 #photo-highlights .col:nth-child(1) {
     background-image: url("../images/photo-highlight-9.jpg");
     background-position: right center;

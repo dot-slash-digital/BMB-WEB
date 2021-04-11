@@ -72,7 +72,7 @@
     font-weight: 400;
 }
 
-.z-no-line {
+.no-alternate-styling {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -383,6 +383,10 @@ form .form-control:focus,
 #jumbotron .text {
     display: flex;
     align-items: center;
+}
+
+#jumbotron.subpage-jumbotron .display {
+    z-index: 2;
 }
 
 #jumbotron.subpage-jumbotron.image-left .text {
