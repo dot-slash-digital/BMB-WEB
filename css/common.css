@@ -405,6 +405,7 @@ form .form-control:focus,
 #jumbotron.subpage-jumbotron img {
     padding-top: 25px;
     width: 450px;
+    height: 100%;
     position: relative;
 }
 
