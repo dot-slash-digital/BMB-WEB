@@ -453,6 +453,8 @@ form .form-control:focus,
     #jumbotron.merch-jumbotron.image-left img {
         transform: rotate(25deg);
         left: -50px;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -463,8 +465,10 @@ form .form-control:focus,
 
     #jumbotron.merch-jumbotron.image-left img {
         transform: rotate(35deg);
-        left: 40px;
-        bottom: -70px;
+        left: 50px;
+        bottom: -140px;
+        width: 150%;
+        height: 150%;
     }
 }
 
@@ -504,9 +508,11 @@ form .form-control:focus,
     }
 
     #jumbotron.merch-jumbotron img {
-        bottom: 280px;
+        transform: rotate(25deg);
+        bottom: 300px;
+        left: -200px;
         width: 150%;
-        margin: 0 -25%;
+        height: 150%;
     }
 }
 
