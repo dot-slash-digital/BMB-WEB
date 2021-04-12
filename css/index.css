@@ -233,28 +233,61 @@
 }
 
 #merch > img {
-    height: 90%;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -60%;
+    right: -40%;
     z-index: 0;
+    transform: rotate(-25deg);
 }
 
-#merch .button {
-    width: 180px;
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1050px) {
     #merch > img {
-        height: 80%;
+        height: 100%;
+        bottom: -40%;
+        right: -20%;
     }
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
     #merch > img {
-        height: 70%;
-        right: -20%;
+        height: 100%;
+        bottom: -40%;
+        right: -40%;
     }
+}
+
+@media (max-width: 575px) {
+    #merch .display,
+    #merch .button {
+        color: #fafafa;
+    }
+
+    #merch .button {
+        border-color: #fafafa;
+    }
+
+    #merch .button:hover {
+        background-color: #fafafa;
+        color: #09478e;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 550px) {
+    #merch > img {
+        bottom: -70%;
+        right: -70%;
+    }
+}
+
+@media (max-width: 476px) {
+    #merch > img {
+        bottom: -90%;
+        right: -110%;
+    }
+}
+
+#merch .button {
+    width: 180px;
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -271,12 +304,6 @@
 
     #merch a {
         margin: 0 auto;
-    }
-
-    #merch img {
-        height: 85%;
-        bottom: -40%;
-        right: -25%;
     }
 }
 
@@ -302,19 +329,6 @@
 @media (max-width: 475px) {
     #merch .display {
         margin-bottom: 15px;
-    }
-}
-
-@media (min-width: 401px) and (max-width: 450px) {
-    #merch img {
-        right: -30%;
-    }
-}
-
-@media (max-width: 400px) {
-    #merch img {
-        right: -40%;
-        bottom: -45%;
     }
 }
 

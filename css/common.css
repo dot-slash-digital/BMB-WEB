@@ -376,7 +376,8 @@ form .form-control:focus,
     justify-content: space-between;
 }
 
-#jumbotron.subpage-jumbotron.image-left .container {
+#jumbotron.subpage-jumbotron.image-left .container,
+#jumbotron.merch-jumbotron.image-left .container {
     flex-direction: row-reverse;
 }
 
@@ -385,20 +386,25 @@ form .form-control:focus,
     align-items: center;
 }
 
-#jumbotron.subpage-jumbotron .display {
+#jumbotron.subpage-jumbotron .display,
+#jumbotron.merch-jumbotron .display {
     z-index: 2;
 }
 
-#jumbotron.subpage-jumbotron.image-left .text {
+#jumbotron.subpage-jumbotron.image-left .text,
+#jumbotron.merch-jumbotron.image-left .text {
     text-align: right;
 }
 
-#jumbotron.subpage-jumbotron {
+#jumbotron.subpage-jumbotron,
+#jumbotron.merch-jumbotron {
     overflow: hidden;
 }
 
 #jumbotron.subpage-jumbotron,
-#jumbotron.subpage-jumbotron .text {
+#jumbotron.subpage-jumbotron .text,
+#jumbotron.merch-jumbotron,
+#jumbotron.merch-jumbotron .text {
     height: calc(100vh - var(--navbar-height));
 }
 
@@ -406,6 +412,10 @@ form .form-control:focus,
     padding-top: 25px;
     width: 450px;
     height: 100%;
+    position: relative;
+}
+
+#jumbotron.merch-jumbotron img {
     position: relative;
 }
 
@@ -421,6 +431,14 @@ form .form-control:focus,
     }
 }
 
+@media (min-width: 992px) {
+    #jumbotron.merch-jumbotron.image-left img {
+        transform: rotate(25deg);
+        left: -180px;
+        bottom: -45px;
+    }
+}
+
 @media (max-width: 1200px) and (min-width: 992px) {
     #jumbotron.subpage-jumbotron.image-left img {
         left: 0;
@@ -431,11 +449,22 @@ form .form-control:focus,
     #jumbotron.subpage-jumbotron.image-left img {
         left: -80px;
     }
+
+    #jumbotron.merch-jumbotron.image-left img {
+        transform: rotate(25deg);
+        left: -50px;
+    }
 }
 
 @media (max-width: 767px) and (min-width: 500px) {
     #jumbotron.subpage-jumbotron.image-left img {
         left: -100px;
+    }
+
+    #jumbotron.merch-jumbotron.image-left img {
+        transform: rotate(35deg);
+        left: 40px;
+        bottom: -70px;
     }
 }
 
@@ -450,15 +479,18 @@ form .form-control:focus,
 }
 
 @media (max-width: 499px) {
-    #jumbotron.subpage-jumbotron .container {
+    #jumbotron.subpage-jumbotron .container,
+    #jumbotron.merch-jumbotron .container {
         display: block;
     }
 
-    #jumbotron.subpage-jumbotron .text {
+    #jumbotron.subpage-jumbotron .text,
+    #jumbotron.merch-jumbotron .text {
         text-align: center !important;
     }
 
-    #jumbotron.subpage-jumbotron .text > div {
+    #jumbotron.subpage-jumbotron .text > div,
+    #jumbotron.merch-jumbotron .text > div {
         width: 100%;
         margin-top: -100px;
         font-size: 60px;
@@ -468,10 +500,13 @@ form .form-control:focus,
         transform: none;
         bottom: 250px;
         width: 100%;
+        left: 0;
     }
 
-    #jumbotron.subpage-jumbotron img {
-        left: 0;
+    #jumbotron.merch-jumbotron img {
+        bottom: 280px;
+        width: 150%;
+        margin: 0 -25%;
     }
 }
 
