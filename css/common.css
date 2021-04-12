@@ -287,7 +287,7 @@ form .form-control:focus,
 }
 
 #navbar button:focus {
-    outline: 5px auto rgba(130, 130, 130, 0.5);
+    outline: none;
 }
 
 @media (max-width: 991px) {
@@ -301,13 +301,13 @@ form .form-control:focus,
 }
 
 @media (max-width: 549px) {
-    #navbar button,
-    #navbar .links {
+    #navbar button {
         margin-right: 15px;
     }
 
     #navbar .links {
         text-align: right;
+        margin-right: 30px;
     }
 
     #navbar .links a {
@@ -472,6 +472,12 @@ form .form-control:focus,
 
     #jumbotron.subpage-jumbotron img {
         left: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    #jumbotron.subpage-jumbotron .text > div {
+        font-size: 48px;
     }
 }
 
