@@ -235,12 +235,12 @@
 #merch > img {
     position: absolute;
     bottom: -60%;
-    right: -40%;
+    right: -30%;
     z-index: 0;
     transform: rotate(-25deg);
 }
 
-@media (min-width: 992px) and (max-width: 1050px) {
+@media (min-width: 992px) and (max-width: 1170px) {
     #merch > img {
         height: 100%;
         bottom: -40%;
