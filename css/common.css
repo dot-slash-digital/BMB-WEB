@@ -160,7 +160,8 @@ form .form-control:focus,
 }
 
 .subpage-jumbotron + .info,
-.subpage-jumbotron + #contact-form {
+.subpage-jumbotron + #contact-form,
+.merch-jumbotron + .info {
     box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
