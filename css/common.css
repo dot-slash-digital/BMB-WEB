@@ -253,7 +253,7 @@ form .form-control:focus,
 }
 
 ul.product-info-list {
-    margin: 8px 32px 0 0;
+    margin: 8px 0 0 32px;
 }
 
 ul.product-info-list li {
