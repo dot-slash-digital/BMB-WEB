@@ -80,6 +80,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.product-price {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
 /* Color Scheme */
 
 .text-color-primary,
