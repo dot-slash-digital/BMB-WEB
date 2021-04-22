@@ -80,12 +80,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.product-price {
-    font-weight: 600;
-    display: block;
-    margin-bottom: 4px;
-}
-
 /* Color Scheme */
 
 .text-color-primary,
@@ -248,6 +242,22 @@ form .form-control:focus,
     100% {
         background-position: 10% 50%;
     }
+}
+
+/* Shopify Custom Styling */
+
+.product-price {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+ul.product-info-list {
+    margin: 8px 32px 0 0;
+}
+
+ul.product-info-list li {
+    list-style: disc !important;
 }
 
 /* Navbar */
