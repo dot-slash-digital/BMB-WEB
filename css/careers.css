@@ -12,6 +12,22 @@
     margin-bottom: 8px;
 }
 
+@media (max-width: 500px) {
+    #careers .content {
+        padding: 32px;
+    }
+
+    #careers .title {
+        font-size: 24px;
+    }
+
+    #careers .description {
+        font-size: 16px;
+    }
+}
+
+/* Email form */
+
 #careers form {
     max-width: 350px;
     margin: 24px auto 0 auto;
@@ -32,20 +48,6 @@
     font-size: 14px;
 }
 
-@media (max-width: 500px) {
-    #careers .content {
-        padding: 32px;
-    }
-
-    #careers .title {
-        font-size: 24px;
-    }
-
-    #careers .description {
-        font-size: 16px;
-    }
-}
-
 /* Photo Highlights section */
 
 #photo-highlights .col:nth-child(1) {
@@ -57,6 +59,6 @@
 }
 
 #photo-highlights .col:nth-child(3) {
-        background-image: url("../images/photo-highlight-7.jpg");
+    background-image: url("../images/photo-highlight-7.jpg");
     background-position: right center;
 }
