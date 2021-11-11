@@ -27,7 +27,7 @@
     z-index: 1;
 }
 
-@media (min-width: 575px) and (max-width: 1199px) {
+@media (min-width: 575px) {
     #jumbotron .image {
         max-width: 40%;
     }
