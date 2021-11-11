@@ -1,11 +1,13 @@
 /* Jumbotron */
 
-#jumbotron .container {
-    padding: 40px 0;
+:root {
+    --navbar-height: 92px;
 }
 
-#jumbotron .image {
-    width: 40%;
+#jumbotron .container {
+    padding: 40px 0;
+    height: calc(100vh - var(--navbar-height));
+    align-items: center;
 }
 
 #jumbotron img {
@@ -23,6 +25,12 @@
     left: 0;
     background-color: blue;
     z-index: 1;
+}
+
+@media (min-width: 575px) and (max-width: 1199px) {
+    #jumbotron .image {
+        max-width: 40%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -80,6 +88,16 @@
     #bg-gradient {
         height: 300px;
     }
+
+  #jumbotron .image {
+        margin: 0 auto;
+        height: calc(100vh - var(--navbar-height) - 240px);
+    }
+
+  #jumbotron img {
+        width: auto;
+        height: 100%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -96,6 +114,16 @@
     #bg-gradient {
         height: 250px;
     }
+
+    #jumbotron .image {
+          margin: 0 auto;
+          height: calc(100vh - var(--navbar-height) - 220px);
+      }
+
+    #jumbotron img {
+          width: auto;
+          height: 100%;
+      }
 }
 
 @media (max-width: 374px) {
@@ -106,6 +134,16 @@
     #bg-gradient {
         height: 210px;
     }
+
+    #jumbotron .image {
+          margin: 0 auto;
+          height: calc(100vh - var(--navbar-height) - 170px);
+      }
+
+    #jumbotron img {
+          width: auto;
+          height: 100%;
+      }
 }
 
 /* Latest Flavors section */

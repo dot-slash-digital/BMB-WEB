@@ -210,7 +210,7 @@ form .form-control:focus,
         #F7941D, #F9ED32, /* lemon ginger */
         #9E1F63, #ED1C24 /* apple mint */
     );
-    background-size: 1200vw 60vh;
+    background-size: 1200vw;
 
     -webkit-animation: gradient-animation 60s ease infinite;
     -moz-animation: gradient-animation 60s ease infinite;
