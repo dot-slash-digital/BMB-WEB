@@ -206,51 +206,86 @@ form .form-control:focus,
 
 .gradient-bg {
     background: linear-gradient(135deg,
-        #2E3192, #00AEEF, /* blueberry basil */
-        #F7941D, #F9ED32, /* lemon ginger */
-        #9E1F63, #ED1C24 /* apple mint */
+        #2E3192, #00AEEF  /* blueberry basil */
+    /*    #F7941D, #F9ED32,  /* lemon ginger */
+    /*    #9E1F63, #ED1C24   /* apple mint */
     );
-    background-size: 1200vw;
 
-    -webkit-animation: gradient-animation 60s ease infinite;
-    -moz-animation: gradient-animation 60s ease infinite;
-    animation: gradient-animation 60s ease infinite;
+    background-size: 100vw;
+    transition: 0.3s all;
+
+/*    -webkit-animation: gradient-animation 10s ease infinite;
+    -moz-animation: gradient-animation 10s ease infinite;
+    animation: gradient-animation 10s ease infinite; */
 }
-
+/*
 @-webkit-keyframes gradient-animation {
     0% {
-        background-position: 0% 50%;
+        background: linear-gradient(135deg,
+            #2E3192, #00AEEF );
+    }
+    25% {
+        background: linear-gradient(135deg,
+            #00AEEF, #F7941D );
     }
     50% {
-        background-position: 100% 50%;
+        background: linear-gradient(135deg,
+            #F7941D, #F9ED32 );
+    }
+    75% {
+        background: linear-gradient(135deg,
+            #F9ED32, #9E1F63 );
     }
     100% {
-        background-position: 00% 50%;
+        background: linear-gradient(135deg,
+            #9E1F63, #ED1C24 );
     }
 }
 @-moz-keyframes gradient-animation {
     0% {
-        background-position: 0% 50%;
+        background: linear-gradient(135deg,
+            #2E3192, #00AEEF );
+    }
+    25% {
+        background: linear-gradient(135deg,
+            #00AEEF, #F7941D );
     }
     50% {
-        background-position: 100% 50%;
+        background: linear-gradient(135deg,
+            #F7941D, #F9ED32 );
+    }
+    75% {
+        background: linear-gradient(135deg,
+            #F9ED32, #9E1F63 );
     }
     100% {
-        background-position: 0% 50%;
+        background: linear-gradient(135deg,
+            #9E1F63, #ED1C24 );
     }
 }
 @keyframes gradient-animation {
     0% {
-        background-position: 10% 50%;
+        background: linear-gradient(135deg,
+            #2E3192, #00AEEF );
+    }
+    25% {
+        background: linear-gradient(135deg,
+            #00AEEF, #F7941D );
     }
     50% {
-        background-position: 90% 50%;
+        background: linear-gradient(135deg,
+            #F7941D, #F9ED32 );
+    }
+    75% {
+        background: linear-gradient(135deg,
+            #F9ED32, #9E1F63 );
     }
     100% {
-        background-position: 10% 50%;
+        background: linear-gradient(135deg,
+            #9E1F63, #ED1C24 );
     }
 }
-
+*/
 /* Shopify Custom Styling */
 
 .product-price {
