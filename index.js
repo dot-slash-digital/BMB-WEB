@@ -1,20 +1,20 @@
 // Expand/Collapse mobile menu in navbar on icon click
-$("#navbar-v2 .toggler-icon").click(function() {
+$("#navbar .toggler-icon").click(function() {
     // if mobile menu is already expanded, collapse it
-    if ($("#navbar-v2").hasClass("mobile-navbar-expanded")) {
-        $("#navbar-v2").removeClass("mobile-navbar-expanded");
+    if ($("#navbar").hasClass("mobile-navbar-expanded")) {
+        $("#navbar").removeClass("mobile-navbar-expanded");
     }
 
     // if mobile menu is already collapsed, expand it
     else {
-        $("#navbar-v2").addClass("mobile-navbar-expanded");
+        $("#navbar").addClass("mobile-navbar-expanded");
     }
 });
 
 // Prevent mobile menu from being displayed when window width >= 768px
 $(window).resize(function() {
     if ($(window).width() > 767) {
-        $("#navbar-v2").removeClass("mobile-navbar-expanded");
+        $("#navbar").removeClass("mobile-navbar-expanded");
     }
 });
 
