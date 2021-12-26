@@ -1,13 +1,13 @@
 /* Jumbotron */
 
-:root {
-    --navbar-height: 92px;
-}
-
 #jumbotron .container {
     padding: 40px 0;
     height: calc(100vh - var(--navbar-height));
     align-items: center;
+}
+
+#jumbotron .image {
+    max-width: 40%;
 }
 
 #jumbotron img {
@@ -21,31 +21,20 @@
 
 #bg-gradient {
     width: 100%;
+    height: 370px;
     position: absolute;
     left: 0;
     background-color: blue;
     z-index: 1;
 }
 
-@media (min-width: 575px) {
-    #jumbotron .image {
-        max-width: 40%;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
     #jumbotron .display {
         font-size: 80px;
     }
 }
 
-@media (min-width: 992px) {
-    #bg-gradient {
-        height: 370px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
     #jumbotron .display {
         font-size: 60px;
     }
@@ -55,7 +44,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 767px) {
     #jumbotron .display {
         font-size: 42px;
     }
@@ -70,43 +59,33 @@
         flex-direction: column-reverse;
     }
 
-    #jumbotron .image {
-        margin: 0 auto;
-    }
-
-    #jumbotron .display {
-        text-align: center;
-        width: 100%;
-    }
-}
-
-@media (min-width: 450px) and (max-width: 575px) {
     #jumbotron .display {
         font-size: 48px;
+        text-align: center;
+        width: 100%;
     }
 
     #bg-gradient {
         height: 300px;
     }
 
-  #jumbotron .image {
+    #jumbotron .image {
         margin: 0 auto;
         height: calc(100vh - var(--navbar-height) - 240px);
+        max-width: 100%;
     }
 
-  #jumbotron img {
+    #jumbotron img {
         width: auto;
         height: 100%;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 449px) {
     #jumbotron .container {
-        padding: 30px 0;
+        height: auto;
     }
-}
 
-@media (min-width: 375px) and (max-width: 449px) {
     #jumbotron .display {
         font-size: 42px;
     }
@@ -116,14 +95,15 @@
     }
 
     #jumbotron .image {
-          margin: 0 auto;
-          height: calc(100vh - var(--navbar-height) - 220px);
-      }
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
 
     #jumbotron img {
-          width: auto;
-          height: 100%;
-      }
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 374px) {
@@ -134,16 +114,6 @@
     #bg-gradient {
         height: 210px;
     }
-
-    #jumbotron .image {
-          margin: 0 auto;
-          height: calc(100vh - var(--navbar-height) - 170px);
-      }
-
-    #jumbotron img {
-          width: auto;
-          height: 100%;
-      }
 }
 
 /* Latest Flavors section */
@@ -187,18 +157,17 @@
 
 #latest-flavors > img {
     position: absolute;
+    bottom: -280px;
     z-index: 0;
 }
 
-#latest-flavors img.left {
+#latest-flavors > img.left {
     left: -70px;
-    bottom: -280px;
     transform: rotate(30deg);
 }
 
-#latest-flavors img.right {
+#latest-flavors > img.right {
     right: -70px;
-    bottom: -280px;
     transform: rotate(-30deg);
 }
 
@@ -241,12 +210,12 @@
 /* Right Info section */
 
 .info.right .button {
-    width: 171px;
+    display: inline-block;
 }
 
-@media (max-width: 992px) and (min-width: 767px){
+@media (max-width: 360px) {
     .info.right .button {
-        width: 148px;
+        font-size: 18px;
     }
 }
 
@@ -262,12 +231,63 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    padding: 150px 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 #merch .display {
     max-width: 550px;
-    margin-bottom: 30px;
+}
+
+#merch .button {
+    display: inline-block;
+}
+
+@media (max-width: 575px) {
+    #merch {
+        text-align: center;
+    }
+
+    #merch .display {
+        font-size: 48px;
+        color: #fafafa;
+    }
+
+    #merch .button {
+        margin: 24px auto 0 auto;
+        border-color: #fafafa;
+        color: #fafafa;
+    }
+
+    #merch .button:hover {
+        background-color: #fafafa;
+        color: #09478e;
+    }
+}
+
+@media (max-width: 470px) {
+    #merch > div {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    #merch .display {
+        font-size: 36px;
+    }
+
+    #merch .button {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    #merch .display {
+        font-size: 30px;
+    }
+
+    #merch .button {
+        font-size: 18px;
+    }
 }
 
 #merch > img {
@@ -278,7 +298,7 @@
     transform: rotate(-25deg);
 }
 
-@media (min-width: 992px) and (max-width: 1170px) {
+@media (max-width: 1170px) {
     #merch > img {
         height: 100%;
         bottom: -40%;
@@ -286,7 +306,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 991px) {
+@media (max-width: 991px) {
     #merch > img {
         height: 100%;
         bottom: -40%;
@@ -295,23 +315,8 @@
 }
 
 @media (max-width: 575px) {
-    #merch .display,
-    #merch .button {
-        color: #fafafa;
-    }
-
-    #merch .button {
-        border-color: #fafafa;
-    }
-
-    #merch .button:hover {
-        background-color: #fafafa;
-        color: #09478e;
-    }
-}
-
-@media (min-width: 476px) and (max-width: 550px) {
     #merch > img {
+        height: auto;
         bottom: -70%;
         right: -70%;
     }
@@ -321,69 +326,6 @@
     #merch > img {
         bottom: -90%;
         right: -110%;
-    }
-}
-
-#merch .button {
-    width: 180px;
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    #merch .display {
-        width: 400px;
-        font-size: 60px;
-    }
-}
-
-@media (max-width: 575px) {
-    #merch {
-        text-align: center;
-    }
-
-    #merch a {
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 549px) {
-    #merch .container {
-        padding: 120px 0;
-    }
-}
-
-@media (min-width: 476px) and (max-width: 575px) {
-    #merch .display {
-        font-size: 48px;
-        padding: 0 15px;
-    }
-}
-
-@media (min-width: 390px) and (max-width: 475px) {
-    #merch .display {
-        padding: 0 30px;
-    }
-}
-
-@media (max-width: 475px) {
-    #merch .display {
-        margin-bottom: 15px;
-    }
-}
-
-@media (min-width: 351px) and (max-width: 475px) {
-    #merch .display {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 350px) {
-    #merch .display {
-        font-size: 30px;
-    }
-
-    #merch .button {
-        font-size: 18px;
-        width: 167px;
     }
 }
 
@@ -410,14 +352,14 @@
 
 /* Photo Highlights section */
 
-#photo-highlights .col:nth-child(1) {
+#photo-highlights-v2 .image:nth-child(1) {
     background-image: url("../images/photo-highlight-1.jpg");
 }
 
-#photo-highlights .col:nth-child(2) {
+#photo-highlights-v2 .image:nth-child(2) {
     background-image: url("../images/photo-highlight-2.jpg");
 }
 
-#photo-highlights .col:nth-child(3) {
+#photo-highlights-v2 .image:nth-child(3) {
     background-image: url("../images/photo-highlight-3.jpg");
 }

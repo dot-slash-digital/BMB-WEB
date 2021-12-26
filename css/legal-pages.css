@@ -43,15 +43,15 @@
 
 /* Photo Highlights section */
 
-#photo-highlights .col:nth-child(1) {
+#photo-highlights-v2 .image:nth-child(1) {
     background-image: url("../images/photo-highlight-7.jpg");
     background-position: right center;
 }
 
-#photo-highlights .col:nth-child(2) {
+#photo-highlights-v2 .image:nth-child(2) {
     background-image: url("../images/photo-highlight-5.jpg");
 }
 
-#photo-highlights .col:nth-child(3) {
+#photo-highlights-v2 .image:nth-child(3) {
     background-image: url("../images/photo-highlight-6.jpg");
 }

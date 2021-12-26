@@ -1,7 +1,3 @@
-.button {
-    width: 106px;
-}
-
 /* Contact Form section */
 
 #contact-form {
@@ -9,9 +5,23 @@
 }
 
 #contact-form .inner {
-    width: 60%;
+    width: calc(60% - 200px);
     margin: 0 auto;
     padding: 75px 100px;
+}
+
+@media (max-width: 992px) {
+    #contact-form .inner {
+        width: calc(80% - 150px);
+        padding: 75px;
+    }
+}
+
+@media (max-width: 576px) {
+    #contact-form .inner {
+        width: calc(90% - 70px);
+        padding: 50px 35px;
+    }
 }
 
 #contact-form .inner > div:nth-child(2) {
@@ -27,51 +37,78 @@
     margin-top: 50px;
 }
 
-#contact-form .form-control {
-    border-width: 2px;
-    border-style: solid;
+#contact-form .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
-#contact-form label {
-    margin-bottom: 0.25rem;
+#contact-form .single-col-row {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#contact-form .col {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: calc(50% - 30px);
+    position: relative;
+    width: calc(100% - 30px);
+    padding: 0 15px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 767px) {
+    #contact-form .col {
+        flex-grow: 1;
+        max-width: calc(100% - 30px);
+    }
 }
 
 #contact-form .asterisk {
     color: #e60000;
 }
 
-@media (max-width: 992px) and (min-width: 577px){
-    #contact-form .inner {
-        width: 80%;
-        padding: 75px;
-    }
+#contact-form label {
+    display: inline-block;
+    margin-bottom: 4px;
 }
 
-@media (max-width: 576px) {
-    #contact-form .inner {
-        width: 90%;
-        padding: 50px 35px;
-    }
+#contact-form input:not(.button),
+#contact-form select,
+#contact-form textarea {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 6px 12px;
+    width: calc(100% - 30px);
+    color: #828282;
 }
 
-@media (max-width: 320px) {
-    #contact-form label,
-    #contact-form input,
-    #contact-form select,
-    #contact-form textarea {
-        font-size: 14px;
-    }
+#contact-form select {
+    width: 100%;
+    vertical-align: middle;
+    background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='%23828282' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") no-repeat right 0.75rem center/8px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-@media (max-width: 355px){
-    #contact-form .title {
-        font-size: 24px;
-    }
+#contact-form input.is-valid,
+#contact-form input.is-invalid,
+#contact-form textarea.is-valid,
+#contact-form textarea.is-invalid {
+    width: calc(100% - 54px);
+}
 
-    #contact-form .description {
-        font-size: 16px;
-        margin: 10px auto 0 auto;
-    }
+#contact-form input:not(.button):focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(130 130 130 / 25%);
 }
 
 /* Section Banner section */
@@ -84,16 +121,16 @@
 
 /* Photo Highlights section */
 
-#photo-highlights .col:nth-child(1) {
+#photo-highlights-v2 .image:nth-child(1) {
     background-image: url("../images/photo-highlight-7.jpg");
     background-position: right center;
 }
 
-#photo-highlights .col:nth-child(2) {
+#photo-highlights-v2 .image:nth-child(2) {
     background-image: url("../images/photo-highlight-8.jpg");
 }
 
-#photo-highlights .col:nth-child(3) {
+#photo-highlights-v2 .image:nth-child(3) {
     background-image: url("../images/photo-highlight-9.jpg");
     background-position: right center;
 }
