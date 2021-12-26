@@ -75,6 +75,14 @@ form textarea.is-invalid:focus {
     box-shadow: 0 0 0 0.2rem rgb(220 53 69 / 25%) !important;
 }
 
+form select {
+    width: 100%;
+    background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='%23828282' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") no-repeat right 0.75rem center/8px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 /* Navbar */
 
 #navbar-v2 {
