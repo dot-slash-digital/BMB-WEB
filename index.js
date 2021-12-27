@@ -1,20 +1,34 @@
+const navbarHeight = 92;
+
 // Expand/Collapse mobile menu in navbar on icon click
 $("#navbar .toggler-icon").click(function() {
     // if mobile menu is already expanded, collapse it
-    if ($("#navbar").hasClass("mobile-navbar-expanded")) {
-        $("#navbar").removeClass("mobile-navbar-expanded");
+    if ($("#navbar").outerHeight() > 92) {
+        $("#navbar").css({
+            height: navbarHeight -
+                parseInt($("#navbar").css("padding-top")) -
+                parseInt($("#navbar").css("padding-bottom")),
+        });
     }
 
     // if mobile menu is already collapsed, expand it
     else {
-        $("#navbar").addClass("mobile-navbar-expanded");
+        $("#navbar").css({
+            height: $("#navbar .links").height() +
+                $("#navbar .toggler-icon-container").height() +
+                16
+        });
     }
 });
 
 // Prevent mobile menu from being displayed when window width >= 768px
 $(window).resize(function() {
     if ($(window).width() > 767) {
-        $("#navbar").removeClass("mobile-navbar-expanded");
+        $("#navbar").css({
+            height: navbarHeight -
+                parseInt($("#navbar").css("padding-top")) -
+                parseInt($("#navbar").css("padding-bottom")),
+        });
     }
 });
 

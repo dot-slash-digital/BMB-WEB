@@ -472,6 +472,7 @@ ul.product-info-list li {
     }
 
     #navbar .links {
+        height: auto;
         text-align: right;
     }
 

@@ -15,6 +15,7 @@
 
 .legal-page .description {
     margin-bottom: 8px;
+    word-break: break-word;
 }
 
 .legal-page .content a.underline::after {
