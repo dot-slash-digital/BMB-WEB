@@ -78,16 +78,6 @@
 }
 
 #contact-form input:not(.button),
-#contact-form select,
-#contact-form textarea {
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 4px;
-    padding: 6px 12px;
-    color: #828282;
-}
-
-#contact-form input:not(.button),
 #contact-form textarea {
     width: calc(100% - 30px);
 }
@@ -97,13 +87,6 @@
 #contact-form textarea.is-valid,
 #contact-form textarea.is-invalid {
     width: calc(100% - 54px);
-}
-
-#contact-form input:not(.button):focus,
-#contact-form select:focus,
-#contact-form textarea:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(130 130 130 / 25%);
 }
 
 /* Section Banner section */
