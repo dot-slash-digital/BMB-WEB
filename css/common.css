@@ -491,6 +491,11 @@ ul.product-info-list li {
     justify-content: space-between;
 }
 
+#jumbotron.subpage-jumbotron .container,
+#jumbotron.merch-jumbotron .container {
+    position: relative;
+}
+
 #jumbotron.subpage-jumbotron.image-left .container,
 #jumbotron.merch-jumbotron.image-left .container {
     flex-direction: row-reverse;
@@ -521,13 +526,14 @@ ul.product-info-list li {
 #jumbotron.merch-jumbotron,
 #jumbotron.merch-jumbotron .text {
     height: calc(100vh - var(--navbar-height));
+    min-height: 600px;
+    max-height: 850px;
 }
 
 #jumbotron.subpage-jumbotron img {
     padding-top: 25px;
     width: 450px;
-    height: 100%;
-    position: relative;
+    position: absolute;
 }
 
 #jumbotron.merch-jumbotron img {
@@ -535,14 +541,33 @@ ul.product-info-list li {
 }
 
 @media (min-width: 1200px) {
+    #jumbotron.subpage-jumbotron.image-left img {
+        left: -40px;
+        bottom: -160px;
+    }
+
     #jumbotron.subpage-jumbotron.image-right img {
         right: -140px;
+        bottom: -250px;
+    }
+
+    #jumbotron.subpage-jumbotron .text {
+        max-width: 600px;
     }
 }
 
 @media (max-width: 1199px) {
+    #jumbotron.subpage-jumbotron.image-left img {
+        bottom: -160px;
+    }
+
     #jumbotron.subpage-jumbotron.image-right img {
+        bottom: -250px;
         right: -280px;
+    }
+
+    #jumbotron.subpage-jumbotron .text {
+        max-width: 600px;
     }
 }
 
@@ -556,13 +581,17 @@ ul.product-info-list li {
 
 @media (max-width: 1200px) and (min-width: 992px) {
     #jumbotron.subpage-jumbotron.image-left img {
-        left: 0;
+        left: -210px;
     }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
+    #jumbotron.subpage-jumbotron .text {
+        max-width: 400px;
+    }
+
     #jumbotron.subpage-jumbotron.image-left img {
-        left: -80px;
+        left: -260px;
     }
 
     #jumbotron.merch-jumbotron.image-left img {
@@ -574,8 +603,16 @@ ul.product-info-list li {
 }
 
 @media (max-width: 767px) and (min-width: 500px) {
+    #jumbotron.subpage-jumbotron .text {
+        max-width: 400px;
+    }
+
     #jumbotron.subpage-jumbotron.image-left img {
-        left: -100px;
+        left: -430px;
+    }
+
+    #jumbotron.subpage-jumbotron.image-right img {
+        right: -450px;
     }
 
     #jumbotron.merch-jumbotron.image-left img {
@@ -584,6 +621,13 @@ ul.product-info-list li {
         bottom: -140px;
         width: 150%;
         height: 150%;
+    }
+}
+
+@media (min-width: 576px) {
+    #jumbotron:not(.subpage-jumbotron):not(.merch-jumbotron) .container {
+        height: calc(100vh - var(--navbar-height));
+        min-height: 700px;
     }
 }
 
@@ -617,9 +661,17 @@ ul.product-info-list li {
 
     #jumbotron.subpage-jumbotron img {
         transform: none;
-        bottom: 250px;
+        bottom: -620px;
         width: 100%;
         left: 0;
+    }
+
+    #jumbotron.subpage-jumbotron.image-left img {
+        bottom: -499px;
+    }
+
+    #jumbotron.subpage-jumbotron.image-right img {
+        bottom: -620px;
     }
 
     #jumbotron.merch-jumbotron img {
@@ -634,6 +686,16 @@ ul.product-info-list li {
 @media (max-width: 450px) {
     #jumbotron.subpage-jumbotron .text > div {
         font-size: 48px;
+    }
+}
+
+@media (max-width: 420px) {
+    #jumbotron.subpage-jumbotron.image-left img {
+        bottom: -330px;
+    }
+
+    #jumbotron.subpage-jumbotron.image-right img {
+        bottom: -400px;
     }
 }
 
@@ -712,6 +774,9 @@ ul.product-info-list li {
         left: 0;
         right: 0;
     }
+    .info .content > div {
+        padding: 25px 30px;
+    }
     .info .description {
         font-size: 16px;
         margin-top: 5px;
@@ -722,9 +787,6 @@ ul.product-info-list li {
 }
 
 @media (max-width: 550px) {
-    .info .content > div {
-        padding: 25px 30px;
-    }
     .info .content {
         margin: -50px auto 0 auto;
         width: 90%;

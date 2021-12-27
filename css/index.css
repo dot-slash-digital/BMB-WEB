@@ -57,6 +57,7 @@
 @media (max-width: 575px) {
     #jumbotron .container {
         flex-direction: column-reverse;
+        height: auto;
     }
 
     #jumbotron .display {
@@ -81,11 +82,18 @@
     }
 }
 
-@media (max-width: 449px) {
-    #jumbotron .container {
+@media (min-width: 450px) and (max-width: 575px) {
+    #jumbotron .image {
         height: auto;
     }
 
+    #jumbotron img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 449px) {
     #jumbotron .display {
         font-size: 42px;
     }
